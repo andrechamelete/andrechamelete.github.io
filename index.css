@@ -4,7 +4,6 @@ body, html {
     background-image: url(https://fernandesgrossi.com.br/wp-content/uploads/2017/07/gota_dagua.jpg);
     background-repeat: no-repeat;
     background-size: 113%; 
-    
     background-position-x: 14%;
     background-attachment: fixed;
 }
@@ -20,8 +19,7 @@ body, html {
     margin: 0px;
     padding: 0px;
     position: fixed;
-    top: 0;
-    
+    top: 0;    
 }
 
 .menu li{
@@ -76,13 +74,6 @@ body, html {
     color: rgba(20, 20, 20)
 }
 
-.resumo {
-    background-color:  white;
-    margin: 0%;
-    padding: 0%;
-    border: 0%;
-}
-
 .corpo h2 {
     background-image: url(https://fernandesgrossi.com.br/wp-content/uploads/2017/07/gota_dagua.jpg);
     height: 100%;
@@ -91,6 +82,7 @@ body, html {
     background-position: 0pt;
     background-position-y: 180%;
     background-position-x: 14%;
+    margin-top: 0%;
     margin-bottom: 0%;
     border-radius: 0px;
     background-color: rgba(255,255,255,0.5);
@@ -100,4 +92,10 @@ body, html {
     font-size: 250%;
     text-align: center;
     padding: 3%;
+}
+
+.corpo {
+    background-color: white;
+    padding: 2% 0%;
+    
 }
