@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+ }
+
+ button:hover {
+     background-color: aquamarine;
+ }
+
+ .menu{
+     width: 100%;
+     height: 40px;
+     list-style:none;
+     background-color:#e4e4e4;
+     float:left;
+     display: grid;
+     grid-template-columns: auto auto auto auto auto;
+     margin: 0px;
+     padding: 0px;
+     
+ }
+
+ a {
+     border-radius: 15px;
+     background-color:#c7c7c7;
+     height: 60%;
+ }
+ 
+ .menu li{
+     padding: 2% ;
+     font: Arial;
+     font-size: 110%;
+     position: relative;
+     text-align: center;
+     float:left;
+     margin: 0px;
+ }
+
+ .menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block; border: 1px solid #d4d4d4;}
+
+ .menu li a:hover{
+     background:#333;
+     color:#fff;
+     -moz-box-shadow:0 3px 10px 0 #CCC;
+     -webkit-box-shadow:0 3px 10px 0 #ccc;
+     text-shadow:0px 0px 5px #fff;
+ }
+
+ .abc {
+     width: 100%;
+     height: 40px;
+     background-color:#7e7e7e3d;
+ }
+
+ .abc:hover .menu {display:grid;}
+ .cabecalho {
+     background-image: url(https://fernandesgrossi.com.br/wp-content/uploads/2017/07/gota_dagua.jpg);
+     height: 100%;
+     background-repeat: no-repeat;
+     background-size: 116%;
+     background-position: 0pt;
+     background-position-y: 180%;
+     background-position-x: 14%;
+     height: 340px;
+     width: 100%;
+     border-radius: 0px;
+     background-color: rgba(255,255,255,0.5);
+     background-blend-mode:lighten;
+     font-size: 3.55vw;
+     text-align: center;
+     background-attachment: fixed; 
+ }
+ .cabecalho h1 {
+     vertical-align: 50px;
+     border: 0px;
+     font-family: 'Kalam', 'Arial';
+     color: rgba(12, 12, 12, 0.95);
+     margin: 0%;
+     padding-top: 70px;
+ }
+ .cabecalho h2 {
+     vertical-align: text-top;
+     font-family: 'Signikanegative', 'Arial';
+     font-size: 84%;
+     margin-top: 0px;
+     color: rgba(20, 20, 20)
+ }
+ .corpo h2 {
+     background-image: url(https://fernandesgrossi.com.br/wp-content/uploads/2017/07/gota_dagua.jpg);
+     height: 100%;
+     background-repeat: no-repeat;
+     background-size: 116%;
+     background-position: 0pt;
+     background-position-y: 180%;
+     background-position-x: 14%;
+     margin-bottom: 0%;
+     border-radius: 0px;
+     background-color: rgba(255,255,255,0.5);
+     background-blend-mode:lighten;
+     background-attachment: fixed; 
+     font-family: 'Signikanegative', 'Arial';
+     font-size: 250%;
+     text-align: center;
+     padding: 3%;
+ }
