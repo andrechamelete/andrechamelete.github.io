@@ -11,7 +11,7 @@ body, html {
 .menu{
     width: 100%;
     height: auto;
-    background-color:#ffffff;
+    background-color:#ffffff9c;
     list-style:none;
     float:left;
     display: grid;
@@ -55,9 +55,9 @@ body, html {
     background-blend-mode:lighten;
     font-size: 3.55vw;
     text-align: center;
-    padding-bottom: 2%;
-    background-size: 100%;
+    padding-bottom: 2%; 
 }
+
 .cabecalho h1 {
     vertical-align: 50px;
     border: 0px;
@@ -65,27 +65,29 @@ body, html {
     color: rgba(12, 12, 12, 0.95);
     margin: 0%;
     padding-top: 70px;
+    background-position-y: 40%;
 }
 .cabecalho h2 {
     vertical-align: text-top;
     font-family: 'Kalam', 'Arial';
     font-size: 84%;
     margin-top: 0px;
-    color: rgba(20, 20, 20)
+    color: rgba(20, 20, 20);
+    background-position-y: 40%;
 }
 
 .corpo h2 {
     background-image: url(https://fernandesgrossi.com.br/wp-content/uploads/2017/07/gota_dagua.jpg);
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 116%;
-    background-position: 0pt;
-    background-position-y: 180%;
+    background-size: 113%;
+
+    background-position-y: 40%;
     background-position-x: 14%;
     margin-top: 0%;
     margin-bottom: 0%;
     border-radius: 0px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode:lighten;
     background-attachment: fixed; 
     font-family: 'Signikanegative', 'Arial';
@@ -95,7 +97,6 @@ body, html {
 }
 
 .corpo {
-    background-color: white;
-    padding: 2% 0%;
-    
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 2% 0%;    
 }
