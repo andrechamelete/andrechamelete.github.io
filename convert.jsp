@@ -28,6 +28,31 @@
                     </p>
                 </form>
             </p> 
+
+        
+            <%!
+                boolean flag = true;
+                int fahr; 
+            %>
+
+            <%
+                String fahrAsString = request.getParameter("tempF").trim();
+                fahr = Integer.parseInt(fahrAsString);
+                for (int i = 2; i < fahr; i++) {
+                    if (fahr % i == 0) {
+                        flag = false;
+                        
+                    }
+                    else {
+                        continue;}}
+            %>
+
+            <%= fahr + " is " + flag + " for Prime number" %>
+
+            <p>
+                <a href='index.html'>Outro numero</a>
+            </p>
+        
         </fieldset>
         
     </body>
