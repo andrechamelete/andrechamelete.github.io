@@ -15,7 +15,7 @@ body, html {
     list-style:none;
     float:left;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     margin: 0px;
     padding: 0px;
     position: fixed;
