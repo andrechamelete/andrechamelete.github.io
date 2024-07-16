@@ -8,7 +8,7 @@ body, html {
     background-attachment: fixed;
 }
 
-.menu{
+.menu {
     width: 100%;
     height: auto;
     background-color:#ffffff9c;
@@ -22,14 +22,14 @@ body, html {
     top: 0;    
 }
 
-.menu li{
+.menu li {
     padding: 0%;  
     float:left;
     margin: 2%;
     height: 80%;
 }
 
-.menu li a{
+.menu li a {
     font-size: 110%;
     text-align: center;
     background-color: rgba(196, 196, 196, 0.925);
@@ -41,7 +41,7 @@ body, html {
     border-radius: 50px;    
 }
 
-.menu li a:hover{
+.menu li a:hover {
     background:#8d8d8d;
     color:#fff;
     -moz-box-shadow:0 3px 10px 0 #CCC;
@@ -131,4 +131,19 @@ body, html {
     text-align: center;
     padding-left: 10%;
     padding-right: 10%
+}
+
+.corpo form button {
+    border-radius: 50px;
+    border: 0;
+    width: 5%;
+    min-width: 100px;
+    color: #fff;
+    height: 30px;
+    background-color: rgb(39, 58, 160);
+    cursor: pointer;
+}
+
+.corpo form button:hover {
+    background-color: rgba(39, 58, 160, 0.658);
 }
