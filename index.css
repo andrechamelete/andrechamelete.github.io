@@ -81,7 +81,6 @@ body, html {
     height: 100%;
     background-repeat: no-repeat;
     background-size: 113%;
-
     background-position-y: 40%;
     background-position-x: 14%;
     margin-top: 0%;
@@ -101,7 +100,6 @@ body, html {
     height: 100%;
     background-repeat: no-repeat;
     background-size: 113%;
-
     background-position-y: 40%;
     background-position-x: 14%;
     margin-top: 0%;
@@ -111,7 +109,7 @@ body, html {
     background-blend-mode:lighten;
     background-attachment: fixed; 
     font-family: 'Signikanegative', 'Arial';
-    font-size: 200%;
+    font-size: 220%;
     text-align: center;
     padding: 3%;
 }
