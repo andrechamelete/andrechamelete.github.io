@@ -81,7 +81,6 @@ body, html {
     height: 100%;
     background-repeat: no-repeat;
     background-size: 113%;
-
     background-position-y: 40%;
     background-position-x: 14%;
     margin-top: 0%;
@@ -92,6 +91,25 @@ body, html {
     background-attachment: fixed; 
     font-family: 'Signikanegative', 'Arial';
     font-size: 250%;
+    text-align: center;
+    padding: 3%;
+}
+
+.corpo h3 {
+    background-image: url(https://fernandesgrossi.com.br/wp-content/uploads/2017/07/gota_dagua.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 113%;
+    background-position-y: 40%;
+    background-position-x: 14%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode:lighten;
+    background-attachment: fixed; 
+    font-family: 'Signikanegative', 'Arial';
+    font-size: 200%;
     text-align: center;
     padding: 3%;
 }
