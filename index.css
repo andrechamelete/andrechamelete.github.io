@@ -207,17 +207,32 @@ body, html {
     padding-right: 10%
 }
 
-.corpo form button {
+.corpo1 form button {
     border-radius: 50px;
     border: 0;
     width: 5%;
-    min-width: 100px;
+    min-width: 20%;
     color: #fff;
     height: 30px;
     background-color: rgb(39, 58, 160);
     cursor: pointer;
 }
 
-.corpo form button:hover {
+.corpo1 form button:hover {
+    background-color: rgba(39, 58, 160, 0.658);
+}
+
+.corpo2 form button {
+    border-radius: 50px;
+    border: 0;
+    width: 5%;
+    min-width: 20%;
+    color: #fff;
+    height: 30px;
+    background-color: rgb(39, 58, 160);
+    cursor: pointer;
+}
+
+.corpo2 form button:hover {
     background-color: rgba(39, 58, 160, 0.658);
 }
