@@ -222,7 +222,7 @@ body, html {
     background-color: rgba(39, 58, 160, 0.658);
 }
 
-.corpo2 form button {
+.corpo2 button {
     border-radius: 50px;
     border: 0;
     width: 5%;
@@ -233,6 +233,6 @@ body, html {
     cursor: pointer;
 }
 
-.corpo2 form button:hover {
+.corpo2 button:hover {
     background-color: rgba(39, 58, 160, 0.658);
 }
