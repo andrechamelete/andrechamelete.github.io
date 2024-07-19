@@ -29,6 +29,7 @@ body, html {
     height: 80%;
 }
 
+
 .menu li a {
     font-size: 110%;
     text-align: center;
@@ -62,9 +63,9 @@ body, html {
     vertical-align: 50px;
     border: 0px;
     font-family: 'Kalam', 'Arial';
-    color: rgba(12, 12, 12, 0.95);
+    color: rgba(12, 12, 12);
     margin: 0%;
-    padding-top: 70px;
+    padding-top: 6%;
     background-position-y: 40%;
 }
 .cabecalho h2 {
@@ -76,7 +77,7 @@ body, html {
     background-position-y: 40%;
 }
 
-.corpo h2 {
+.corpo h2, h3 {
     background-image: url(gota.jpg);
     height: 100%;
     background-repeat: no-repeat;
@@ -94,80 +95,25 @@ body, html {
     padding: 3%;
 }
 
-.corpo1 h2, h3 {
-    background-image: url(gota.jpg);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 113%;
-    background-position-y: 40%;
-    background-position-x: 14%;
-    margin-top: 0%;
+.corpo .left {
     margin-right: 30%;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode:lighten;
-    background-attachment: fixed; 
-    font-family: 'Signikanegative', 'Arial';
-    font-size: 250%;
-    text-align: center;
-    padding: 3%;
 }
 
-.corpo1 h3 {
-    background-image: url(gota.jpg);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 113%;
-    background-position-y: 40%;
-    background-position-x: 14%;
-    margin-top: 0%;
-    margin-right: 30%;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode:lighten;
-    background-attachment: fixed; 
-    font-family: 'Signikanegative', 'Arial';
-    font-size: 220%;
-    text-align: center;
-    padding: 3%;
-}
-
-.corpo2 h2 {
-    background-image: url(gota.jpg);
-    height: 100%;    
-    background-repeat: no-repeat;
-    background-size: 113%;
-    background-position-y: 40%;
-    background-position-x: 14%;
-    margin-top: 0%;
+.corpo .right {
     margin-left: 30%;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
-    background-origin: 47%;
-    background-blend-mode:lighten;
-    background-attachment: fixed; 
-    font-family: 'Signikanegative', 'Arial';
-    font-size: 250%;
-    text-align: center;
-    padding: 3%;
 }
 
 .corpo {
     background-color: rgba(255, 255, 255, 0.97);
-    padding: 3% 0%;    
+    padding: 0% 0% 0%;    
 }
 
-.corpo1 {
-    background-color: rgba(255, 255, 255, 0.97);
-    padding: 3% 0%;    
-}
-
-.corpo2 {
-    background-color: rgba(255, 255, 255, 0.97);
-    padding: 3% 0%;    
+.corpo div {
+    padding: 5%;
 }
 
 .corpo p {
@@ -177,21 +123,7 @@ body, html {
     padding-right: 10%
 }
 
-.corpo1 p {
-    font-family: 'Mukta', 'Arial';
-    text-align: justify;
-    padding-left: 10%;
-    padding-right: 10%
-}
-
-.corpo2 p {
-    font-family: 'Mukta', 'Arial';
-    text-align: justify;
-    padding-left: 10%;
-    padding-right: 10%
-}
-
-.corpo1 form {
+.corpo form {
     font-family: 'Mukta', 'Arial';
     font-style: oblique;
     text-align: center;
@@ -199,15 +131,7 @@ body, html {
     padding-right: 10%
 }
 
-.corpo2 form {
-    font-family: 'Mukta', 'Arial';
-    font-style: oblique;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%
-}
-
-.corpo1 form button {
+.corpo form button {
     border-radius: 50px;
     border: 0;
     width: 5%;
@@ -218,21 +142,6 @@ body, html {
     cursor: pointer;
 }
 
-.corpo1 form button:hover {
-    background-color: rgba(39, 58, 160, 0.658);
-}
-
-.corpo2 button {
-    border-radius: 50px;
-    border: 0;
-    width: 5%;
-    min-width: 20%;
-    color: #fff;
-    height: 30px;
-    background-color: rgb(39, 58, 160);
-    cursor: pointer;
-}
-
-.corpo2 button:hover {
+.corpo form button:hover {
     background-color: rgba(39, 58, 160, 0.658);
 }
