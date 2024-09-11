@@ -92,7 +92,7 @@ body, html {
     background-attachment: fixed; 
     font-family: 'Signikanegative', 'Arial';
     font-size: 250%;
-    text-align: center;
+    text-align:center;
     padding: 3%;
 }
 
@@ -115,13 +115,13 @@ body, html {
 }
 
 .corpo .left {
-    margin-right: 30%;
+    margin-right: 20%;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
 }
 
 .corpo .right {
-    margin-left: 30%;
+    margin-left: 20%;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
 }
@@ -163,4 +163,50 @@ body, html {
 
 .corpo form button:hover {
     background-color: rgba(39, 58, 160, 0.658);
+}
+
+.contato {
+    margin-right: 20%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-left: 20%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+
+.art {
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 1% 10%;
+}
+
+nav div {
+    padding: 2%;
+    border: 1.5px solid #3a3a3a98;
+    border-radius: 20px;        
+}
+
+nav p {
+    font-family: 'Mukta', 'Arial';
+    text-align: justify;
+    padding: 0% 10% 0%;
+
+}
+
+nav h2 {
+    height: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode:lighten;
+    background-attachment: fixed; 
+    font-family: 'Signikanegative', 'Arial';
+    font-size: 250%;
+    padding: 3% 3% 1%;
+    text-align: start; 
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }

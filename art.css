@@ -128,11 +128,11 @@ body, html {
 
 .corpo {
     background-color: rgba(255, 255, 255, 0.97);
-    padding: 0% 0% 0%;    
+    padding: 5% 0%;    
 }
 
 .corpo div {
-    padding: 5%;
+    padding: 0%;
 }
 
 .corpo p {
@@ -165,24 +165,34 @@ body, html {
     background-color: rgba(39, 58, 160, 0.658);
 }
 
-.impar {
+.contato {
+    margin-right: 20%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-left: 20%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.art {
     background-color: rgba(255, 255, 255, 0.97);
-    padding: 0% 0% 0%;
-    
+    padding: 1% 10%;
 }
 
-.impar div {
-    padding: 5%;
+nav div {
+    padding: 2%;
+    border: 1.5px solid #3a3a3a98;
+    border-radius: 20px;        
 }
 
-.impar p {
+nav p {
     font-family: 'Mukta', 'Arial';
     text-align: justify;
-    padding-left: 10%;
-    padding-right: 10%
+    padding: 0% 10% 0%;
+
 }
 
-.impar h2 {
+nav h2 {
     height: 100%;
     margin-top: 0%;
     margin-bottom: 0%;
@@ -191,11 +201,19 @@ body, html {
     background-attachment: fixed; 
     font-family: 'Signikanegative', 'Arial';
     font-size: 250%;
-    text-align:start;
-    padding: 3%;
+    padding: 3% 3% 1%;
+    text-align: start; 
 }
 
-.impar a {
+nav a {
     text-decoration: none;
-    color: black;
+    color: black; 
+}
+
+.impar {
+      
+}
+
+.par {
+    
 }
