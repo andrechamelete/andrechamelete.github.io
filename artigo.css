@@ -128,18 +128,18 @@ body, html {
 
 .corpo {
     background-color: rgba(255, 255, 255, 0.97);
-    padding: 0% 0% 0%;    
+    padding: 5% 0%;    
 }
 
 .corpo div {
-    padding: 5%;
+    padding: 0%;
 }
 
 .corpo p {
     font-family: 'Mukta', 'Arial';
     text-align: justify;
-    padding-left: 20%;
-    padding-right: 20%
+    padding-left: 10%;
+    padding-right: 10%
 }
 
 .corpo form {
@@ -189,7 +189,6 @@ nav p {
     font-family: 'Mukta', 'Arial';
     text-align: justify;
     padding: 0% 10% 0%;
-
 }
 
 nav h2 {
