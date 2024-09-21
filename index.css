@@ -8,6 +8,8 @@ body, html {
     background-attachment: fixed;
 }
 
+
+/* menu suspenso = Home, artigos, projetos, sobre */
 .menu {
     width: 100%;
     height: auto;
@@ -50,6 +52,7 @@ body, html {
     text-shadow:0px 0px 5px #fff;
 }
 
+/* botão lateral para mudança de idioma */
 .idioma {
     position: fixed;
     top: 50%;
@@ -78,6 +81,7 @@ body, html {
     margin: 0% 5%
 }
 
+/* header da página */
 .cabecalho {
     background-color: rgba(255,255,255,0.5);
     background-blend-mode:lighten;    
@@ -101,7 +105,8 @@ body, html {
     color: rgba(20, 20, 20);    
 }
 
-.corpo h2 {
+/* Títulos das divisões e estilização geral do corpo */
+.corpo .right, .left, .contato {
     background-image: url(gota.jpg);
     height: 100%;
     background-repeat: no-repeat;
@@ -146,6 +151,50 @@ body, html {
     padding-right: 10%
 }
 
+/* secção de artigos */
+.art {
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 5% 10%;
+}
+
+.art div {
+    padding: 2%;
+    border: 1.5px solid #3a3a3a98;
+    border-radius: 20px;        
+}
+
+.art p {
+    font-family: 'Mukta', 'Arial';
+    text-align: justify;
+    padding: 0% 10% 0%;
+}
+
+.art h2 {
+    height: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-family: 'Signikanegative', 'Arial';
+    font-size: 3vw;
+    padding: 3% 3% 1%;
+    text-align: start; 
+}
+
+.art a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Contato e formulário */
+
+.contato {
+    margin-right: 20%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-left: 20%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
 .corpo form {
     font-family: 'Mukta', 'Arial';
     font-style: oblique;
@@ -167,48 +216,4 @@ body, html {
 
 .corpo form button:hover {
     background-color: rgba(39, 58, 160, 0.658);
-}
-
-.contato {
-    margin-right: 20%;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    margin-left: 20%;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-}
-
-.art {
-    background-color: rgba(255, 255, 255, 0.97);
-    padding: 5% 10%;
-}
-
-nav div {
-    padding: 2%;
-    border: 1.5px solid #3a3a3a98;
-    border-radius: 20px;        
-}
-
-nav p {
-    font-family: 'Mukta', 'Arial';
-    text-align: justify;
-    padding: 0% 10% 0%;
-}
-
-nav h2 {
-    height: 100%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode:lighten;
-    background-attachment: fixed; 
-    font-family: 'Signikanegative', 'Arial';
-    font-size: 3vw;
-    padding: 3% 3% 1%;
-    text-align: start; 
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
 }
