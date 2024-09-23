@@ -108,8 +108,7 @@ body, html {
 #lema {
     text-align: right; 
     font-family: 'Kalam', 'Arial';
-    padding: 5%;
-    padding-bottom: 0%;
+    padding: 0% 5%;
     margin: 0%;
 }
 
@@ -118,17 +117,17 @@ body, html {
     background-image: url(gota.jpg);
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 113%;
+    background-size:cover;
     background-position-x: 14%;
     margin-top: 0%;
     margin-bottom: 0%;
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode:lighten;
-    background-attachment: fixed; 
+    /*background-attachment: fixed; */
     font-family: 'Signikanegative', 'Arial';
     font-size: 4vw;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
 }
 
 .corpo .left {
@@ -150,14 +149,20 @@ body, html {
 
 .corpo div {
     padding: 5%;
-
-
 }
 
 .corpo p {
     font-family: 'Mukta', 'Arial';
     text-align: justify;
-    padding: 2% 10% 0%;
+    padding: 0% 5%;
+    margin: 0%;
+}
+
+.corpo ul {
+    font-family: 'Mukta', 'Arial';
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
     margin: 0%;
 }
 
