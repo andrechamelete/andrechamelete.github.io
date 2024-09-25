@@ -1,0 +1,4 @@
+logo:
+azul: 40628E
+branco: EBEBEB
+fundo preto: 404040
