@@ -88,6 +88,7 @@ header {
     padding: 10px;    
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    z-index: 100;
 }
 
 .idioma img {
@@ -124,6 +125,7 @@ header {
     padding: 10px;    
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    z-index: 100;
 }
 
 .idiom img {
