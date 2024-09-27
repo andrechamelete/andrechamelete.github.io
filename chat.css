@@ -1,0 +1,65 @@
+/* Estilos gerais para o header */
+header {
+    display: flex;
+    background-color: #404040;
+    width: 100%;
+    position: fixed; /* Mantém o header fixo no topo */
+    top: 0; /* Posiciona no topo da página */
+    left: 0;
+    z-index: 1000; /* Garante que fique acima dos outros elementos */
+    padding: 10px 0;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5); /* Sombra para dar destaque */
+}
+
+/* Estilos para a div interna do header */
+header div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Estilos para a logo e o título */
+header div a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 5%;
+}
+
+header div a img {
+    height: 100px;
+}
+
+header div a h1 {
+    font-family: 'Rowdies', 'sans-serif';
+    color: #ebebeb;
+    margin-left: 10px;
+    font-size: 220%;
+}
+
+/* Estilos para o menu */
+header div nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 5%;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-family: 'Signika Negative', sans-serif;
+    color: #dadada;
+    font-size: 120%;
+}
+
+/* Adicionar espaçamento no conteúdo da página */
+body {
+    margin-top: 150px; /* Compensa a altura do header fixo */
+}

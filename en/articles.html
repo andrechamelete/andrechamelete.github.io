@@ -5,48 +5,64 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <meta property="og:title" content="Chamelete">
-        <meta property="og:description" content="Agilidade organizacional para empresas que buscam resultados sem excesso de mudanças!">
+        <meta property="og:description" content="Organizational agility for companies seeking results without excessive changes!">
         <meta property="og:url" content="https://www.chamelete.com">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://www.chamelete.com/banner.jpg">
+        <meta property="og:image" content="https://www.chamelete.com/en/banner.jpg">
         <meta property="og:image:type" content="image/jpg">
         <meta property="og:image:width" content="696">
         <meta property="og:image:height" content="335">
 
-		<meta name="keywords" content="Kanban, Scrum, teoria das restrições, gestão de fluxo, software development, Lean, agile, agilista, agile coach, scrum master, gestão de processos, gestão de projetos, agilidade">
-		<meta name="description" content="Agilidade organizacional para empresas que buscam resultados sem excesso de mudanças!">
+        <meta name="Keywords" content="Kanban, Scrum, theory of constrains, management, workflow, software, development, Lean, agile, agilist, coaching, agile coach, scrum master, process, projects, agility, agile, agile transformation, restructuring">
+		<meta name="description" content="Organizational agility for companies seeking results without excessive changes!">
 		<meta http-equiv="refresh" content="3600">
-	    <title>Chamelete &lt&gt Artigos</title>
-
+	    <title>Chamelete</title>
+        
         <link rel="icon" href="https://www.chamelete.com/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-	    <link rel="stylesheet" href="../index.css">
+	    <link rel="stylesheet" href="../index.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">   
 	    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
 	    <link href='https://fonts.googleapis.com/css?family=Mukta' rel='stylesheet'>
 	    <link href='https://fonts.googleapis.com/css?family=Signikanegative' rel='stylesheet'>
-
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <script src="../script.js"></script>
 	</head>
 
     <body>
         
-        <nav class="abc">
-            <ul class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="artigo.html">Articles</a>
-                <li><a href="https://github.com/andrechamelete">Projects</a></li>
-                <li><a href="sobre.html">About</a></li>
-            </ul>
-        </nav>
-
-        <header class="cabecalho">
-            <h1>Articles</h1>
-            
+        <header>
+            <div class="logo">
+                <a href="https://www.chamelete.com/en/" alt="Logo">
+                    <img src="../logo-sem.png">
+                    <h1>Chamelete</h1>
+                </a>
+            </div>
+            <nav class="menu">                
+                <ul class="lista-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../en/articles.html">Articles</a>
+                    <li><a href="https://github.com/andrechamelete">Projects</a></li>
+                    <li><a href="/">About</a></li>
+                </ul>               
+            </nav>
         </header>
+
+        <div class="space"></div>
+
+        <nav class="idiom">
+            <a href="../artigo.html">
+                <img src="portugues.png" alt="mudar para Português">
+                <span class="tooltip"><b>Versão em Português</b></span>
+            </a>
+        </nav>
         
         <main>
+            <h1>Articles</h1>
             <div class="corpo">
                 <nav class="art">
                     <div class="impar"><a href="metodo-kanban.html">
@@ -54,7 +70,7 @@
                         <p>Kanban is a method of managing creative work and organizational evolution, inspired by the Japanese system of visual management using cards, which acts in a non-prescriptive, evolutionary and experimental way, seeking to improve companies and services. <em>(Continue reading)</em></p>
                     </a></div>        
                     <br>
-                    <div class="par"><a href="principios-gestao-mudanca.html">
+                    <div class="impar"><a href="principios-gestao-mudanca.html">
                         <h2>Change Management Principles</h2>
                         <p>The principles of Change Management are suggested guidelines for making transformations with reduced stress and high employee engagement to solve real and priority problems. <em>(Continue reading)</em></em></p>
                     </a></div>        
@@ -74,7 +90,7 @@
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email" size="40" required placeholder="Email"><br>
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" cols="40" placeholder="Message" rows="5"></textarea><br>
+                    <textarea id="message" name="message" cols="42" placeholder="Message" rows="5"></textarea><br>
                     <button type="submit">Enviar</button>
                 </form>
             </div>

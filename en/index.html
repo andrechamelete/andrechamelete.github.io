@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 	<head>
 		<meta charset="UFT-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,42 +23,53 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-	    <link rel="stylesheet" href="../index.css">        
+	    <link rel="stylesheet" href="../index.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">   
 	    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
 	    <link href='https://fonts.googleapis.com/css?family=Mukta' rel='stylesheet'>
 	    <link href='https://fonts.googleapis.com/css?family=Signikanegative' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <script src="../script.js"></script>
 	</head>
 
 	<body>
-        <nav class="abc">
-            <ul class="menu">
-                <li><a href="/en/">Home</a></li>
-                <li><a href="../en/articles.html">Articles</a>
-                <li><a href="https://github.com/andrechamelete">Projects</a></li>
-                <li><a href="sobre.html">About</a></li>
-            </ul>
-        </nav>
+        <header>
+            <div class="logo">
+                <a href="https://www.chamelete.com/en/" alt="Logo">
+                    <img src="../logo-sem.png">
+                    <h1>Chamelete</h1>
+                </a>
+            </div>
+            <nav class="menu">                
+                <ul class="lista-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../en/articles.html">Articles</a>
+                    <li><a href="https://github.com/andrechamelete">Projects</a></li>
+                    <li><a href="/">About</a></li>
+                </ul>               
+            </nav>
+        </header>
+
+        <div class="space"></div>
 
         <nav class="idiom">
-            <a href="/">
+            <a href="../">
                 <img src="portugues.png" alt="mudar para Português">
                 <span class="tooltip"><b>Versão em Português</b></span>
             </a>
         </nav>
 
-        <header class="cabecalho">
-            <h1>Chamelete</h1>
-		    <h2>Agility&nbsp;&&nbsp;Data&nbsp;Science</h2>
-        </header>
-
         <main>
             <div class="corpo">
                 <div>
-                    <p id="lema">
-                        Excessive focus on copied models yields<br> too many changes and no results!
+                    <p id="slogan">
+                        Stress-free agile management
                     </p>
-
+                    <hr>
+                    <div class="subslogan">
+                        <p>Greater&nbsp;predictability. Lower&nbsp;costs. Outstanding&nbsp;results.</p>
+                    </div>
                 </div>
             </div>
 
@@ -67,7 +78,7 @@
                 <div>
                     <p>Organizational agility is not a matter of adopting methodologies or applying popular frameworks. It is about adapting quickly, identifying risks in advance, and maintaining pace and efficiency even in the face of unexpected changes in the market, which goes beyond the incremental and iterative delivery of products and services.</p>
                     <br>
-                    <p>Many agile implementations fail by focusing on copying models that have worked elsewhere, ignoring the unique context of each organization. Each company is its own ecosystem, with specific challenges, culture, and goals.</p>
+                    <p>The pursuit of agile management often fails when it focuses too much on copying models that have worked elsewhere, ignoring the unique context of each organization. Each company is its own environment, with specific challenges, culture, and goals.</p>
                     <br>
                     <p>Benefits for your company:</p>
                     <br>
@@ -83,7 +94,7 @@
             </div>
 
             <div class="corpo">
-                <h2 class="right">Latest articles</h2>
+                <h2 class="right">Latest&nbsp;articles</h2>
                 <nav class="art">
                     <div class="impar"><a href="metodo-kanban.html">
                         <h2>The Kanban Method</h2>
@@ -110,7 +121,7 @@
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email" size="40" required placeholder="Email"><br>
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" cols="40" placeholder="Message" rows="5"></textarea><br>
+                    <textarea id="message" name="message" cols="42" placeholder="Message" rows="5"></textarea><br>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
