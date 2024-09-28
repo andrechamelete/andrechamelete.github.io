@@ -4,10 +4,6 @@ body {
     padding: 0;
 
 }
-/*
-@media screen {  600 px 
-    
-} */
 
 * {
     box-sizing: border-box;
@@ -49,6 +45,13 @@ header {
     font-size: 220%;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 180%;
+    color: #dadada;
+    cursor: pointer;
+}
+
 .menu {
     position: absolute;
     right: 50px;
@@ -61,7 +64,6 @@ header {
     list-style: none;
     display: flex;
     gap: 50px;
-
     padding: 0;
     margin: 0;
     text-align: center;
@@ -272,8 +274,7 @@ main h1 {
     border-left-color: rgb(180, 180, 180);
     border-left-width: 2px;
     border-bottom-color: #f7f7f7;
-    border-right-color: #f7f7f7;
-           
+    border-right-color: #f7f7f7;           
 }
 
 .art p {
@@ -359,7 +360,7 @@ textarea {
     border-radius: 50px;
     border: 0;
     width: 5%;
-    min-width: 20%;
+    min-width: 30%;
     color: #fff;
     height: 30px;
     background-color: rgb(39, 58, 160);
@@ -395,3 +396,160 @@ textarea {
     padding-right: 20%
 }
 
+/* Responsividade */
+
+@media screen and (min-width: 1280px) {
+    .logo {margin-left: 100px;}
+    .menu {right: 100px;}
+    .lista-menu {gap: 80px}
+}
+
+@media screen and (max-width: 992px) {
+    .lista-menu {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    /* alterar menu */
+    .menu-toggle {
+        display: flex;
+    }
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 69px;
+        right: -50px;
+        background-color: #404040;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px 40px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: top 5s ease-in-out;
+        text-align: right;
+        gap: 0px;
+    }
+
+    .lista-menu li {
+        padding: 5px 0;        
+    }
+
+    .lista-menu.active {
+        display: flex;
+    }
+
+    #slogan {
+        font-size: 150%;
+    }
+
+    .corpo div .subslogan p {
+        font-size: 120%;
+    }
+
+    .corpo .right, .left, .contato {
+        font-size: 150%;
+    }
+    .art h2 {
+        font-size: 120%;
+        font-weight: 800;
+    }
+
+    .art p {
+        max-height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+    }
+}
+
+@media screen and (max-width: 625px ){  
+    /* reduzir tamanho fonte slogan e subslogan */
+    #slogan {
+        font-size: 130%;
+    }
+
+    .corpo div .subslogan p {
+        font-size: 100%;
+    }
+
+    .corpo .right, .left, .contato {
+        font-size: 120%;
+    }
+    .art h2 {
+        font-size: 100%;
+        font-weight: 800;
+    }
+} 
+
+@media screen and (max-width: 540px) {   
+    /* reduzir tamanho da fonte ods h2
+    reduzir margens externas do header */
+    .logo {
+        margin-left: 20px;
+    }
+
+    .menu {
+        right: 20px;
+    }
+}
+
+@media screen  and (max-width: 450px) {
+    /* reduzir fonte titulos das chamadas de artigos */
+    .logo {
+        margin-left: 15px;
+    }
+
+    .menu {
+        right: 15px;
+    }
+
+    .logo a img {
+        height: 70px;
+    }
+    .logo a h1 {
+        font-size: 170%;
+    }
+    
+    .menu-toggle {
+        font-size: 150%;
+    }
+
+    .lista-menu {
+        top: 51px;
+    }
+
+    .space {
+        height: 70px;
+    }
+
+    .corpo div .subslogan p {
+        font-size: 75%;
+    }
+
+    .corpo div form input, textarea {
+        width: 210px;
+    }
+
+    .corpo div form button {
+        font-size: 80%;
+    }
+
+}
+/*
+@media screen celular {   
+    alterar campos de contato
+}
+
+Resumo breakpoints:
+Dispositivos móveis (Smartphones - retrato) = 320px a 480px
+Dispositivos móveis (Smartphones - paisagem) = 480px a 768px
+Tablets (modo retrato) = 768px a 1024px
+Tablets (modo paisagem) ou notebooks menores = 1024px a 1280px
+Desktops (resoluções normais) = 1280px a 1440px
+Desktops grandes e monitores maiores = 1440px e superiores
+
+meu notebook = width: 1365px
+meu ihpone = width: 408px
+meu monitos = width: 1915px
+*/
