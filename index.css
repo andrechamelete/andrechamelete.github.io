@@ -7,7 +7,6 @@ body {
 
 * {
     box-sizing: border-box;
-
 }
 
 header {
@@ -28,7 +27,6 @@ header {
     margin-right: auto;
     margin-left: 50px;
 }
-
 
 .logo a img {
     height: 100px;
@@ -201,8 +199,8 @@ main h1 {
     font-family: 'Signikanegative', 'Arial';
     font-size: 200%;
     font-weight: 900;
-    padding: 2%;
-    animation: 5s infinite alternate colorTr;
+    padding: 1%;
+    animation: 3s infinite alternate colorTr;
 }
 
 @keyframes colorTr {
@@ -367,7 +365,6 @@ input, textarea {
     background-color: rgba(39, 58, 160, 0.658);
 }
 
-
 /* estilização de artigos */
 .cabecalho {
     background-color: rgba(255,255,255,0.5);
@@ -414,23 +411,35 @@ input, textarea {
     .lista-menu {
         display: none;
         position: absolute;
-        top: 69px;
+        top: 70px;
         right: -50px;
         background-color: #404040;
-        flex-direction: column;
-        width: 200px;
+        flex-direction:row;
+        width: 450px;
         padding: 10px 40px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         transition: top 5s ease-in-out;
-        text-align: right;
-        gap: 0px;
+        text-align: center;
+        gap: 15%;
+        animation: 1s 0s menuAnime;
     }
 
-    .lista-menu li {
-        padding: 5px 0;        
+    @keyframes menuAnime {
+        0% {
+            opacity: 0;   
+        }
+
+        100% {
+            opacity: 1;
+        }
+        
     }
 
+/*    .lista-menu li {
+        padding: 5px 0;  
+    }
+*/
     .lista-menu.active {
         display: flex;
     }
@@ -488,6 +497,10 @@ input, textarea {
     .menu {
         right: 20px;
     }
+    
+    .lista-menu {
+        right: -20px;
+    }
 }
 
 @media screen  and (max-width: 450px) {
@@ -512,7 +525,19 @@ input, textarea {
     }
 
     .lista-menu {
-        top: 51px;
+        top: 52px;
+        right: -15px;
+        flex-direction:column;
+        width: 200px;
+        padding: 10px 40px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        text-align: center;
+        gap: 15%;
+    }
+
+    .lista-menu li {
+        padding: 5px 0;  
     }
 
     .space {
@@ -532,11 +557,8 @@ input, textarea {
     }
 
 }
-/*
-@media screen celular {   
-    alterar campos de contato
-}
 
+/*
 Resumo breakpoints:
 Dispositivos móveis (Smartphones - retrato) = 320px a 480px
 Dispositivos móveis (Smartphones - paisagem) = 480px a 768px
@@ -545,7 +567,7 @@ Tablets (modo paisagem) ou notebooks menores = 1024px a 1280px
 Desktops (resoluções normais) = 1280px a 1440px
 Desktops grandes e monitores maiores = 1440px e superiores
 
-meu notebook = width: 1365px
-meu ihpone = width: 408px
-meu monitos = width: 1915px
+notebook = width: 1365px
+celular = width: 408px
+monitor = width: 1915px
 */

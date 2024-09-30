@@ -21,3 +21,13 @@ menuToggle.addEventListener('click', function() {
     // Alterna a classe 'active' para mostrar ou esconder o menu
     listaMenu.classList.toggle('active');
 });
+
+document.addEventListener('click', function(event) {
+    // Verifica se o clique foi fora da lista de menu e do botão de toggle
+    if (!listaMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+        // Se o menu estiver aberto, fecha-o removendo a classe 'active'
+        if (listaMenu.classList.contains('active')) {
+            listaMenu.classList.remove('active');
+        }
+    }
+});
