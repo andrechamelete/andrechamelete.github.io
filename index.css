@@ -84,10 +84,9 @@ header {
 .idioma {
     position: fixed;
     top: 50%;
-    right: -81pt;
-    transition: right 0.7s ease-out;
+    right: 0;
     background-color: #40628ebe;
-    padding: 10px;    
+    padding: 10px 0;    
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     z-index: 100;
@@ -97,6 +96,7 @@ header {
     height: 20px;
     min-height: 20px;
     cursor: pointer;
+    padding: 0 5px 0 10px;
 }
 
 .idioma a {
@@ -108,23 +108,26 @@ header {
 .tooltip {
     display: block;
     font: "Mukta", "Arial";
-    margin: 0% 5%;
+    margin: 0% 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     color: black;
     white-space: nowrap;
+    font-weight: 800;
+    width: 0;
+    transition: width 0.7s ease-out;
 }
 
-.idioma:hover{
-    right: 0%;
+.idioma:hover .tooltip{
+    width: 110px;
 }
 
 .idiom {
     position: fixed;
     top: 50%;
-    right: -110pt;
-    transition: right 0.8s ease-out;
-    background-color: #40628e7a;
-    padding: 10px;    
+    right: 0;
+    background-color: #40628ebe;
+    padding: 10px 0;    
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     z-index: 100;
@@ -134,6 +137,7 @@ header {
     height: 20px;
     min-height: 20px;
     cursor: pointer;
+    padding: 0 5px 0 10px;
 }
 
 .idiom a {
@@ -142,17 +146,8 @@ header {
     text-decoration: none;
 }
 
-.tooltip {
-    display: block;
-    font: "Mukta", "Arial";
-    margin: 0% 5%;
-    text-decoration: none;
-    color: black;
-    white-space: nowrap;
-}
-
-.idiom:hover{
-    right: 0%;
+.idiom:hover .tooltip{
+    width: 150px;
 }
 
 
@@ -337,14 +332,15 @@ h2.contato + div > p {
     padding-right: 10%
 }
 
-input {
+
+/* input {
     background-color: #f7f7f7;
     border-radius: 5px;
     border-color: white;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
-textarea {
+input, textarea {
     background-color: #f7f7f7;
     border-radius: 5px;
     border-top-color: rgb(180, 180, 180);
