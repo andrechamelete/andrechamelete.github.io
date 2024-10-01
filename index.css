@@ -2,7 +2,6 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 * {
@@ -205,7 +204,7 @@ main h1 {
 }
 
 .corpo .right, .left, .contato {
-    background-image: url(gota.jpg);
+    background: linear-gradient(#caeaf098, #2c717e98);
     height: 100%;
     background-repeat: no-repeat;
     background-size: 200%;
@@ -225,7 +224,7 @@ main h1 {
         background-color: rgba(255, 255, 255, 0.7);
     }
     100% {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(60, 92, 136, 0.3);
     }
 }
 
@@ -313,7 +312,6 @@ main h1 {
 }
 
 /* Contato e formulário */
-
 .contato {
     margin-right: 20%;
     border-top-right-radius: 100px;
@@ -347,14 +345,6 @@ h2.contato + div > p {
     padding-right: 10%
 }
 
-
-/* input {
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    border-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-} */
-
 input, textarea {
     background-color: #f7f7f7;
     border-radius: 5px;
@@ -383,24 +373,6 @@ input, textarea {
 }
 
 /* estilização de artigos */
-
-/*
-.cabecalho {
-    background-color: rgba(255,255,255,0.5);
-    background-blend-mode:lighten;    
-    text-align: center;
-    padding-bottom: 5%; 
-    padding-top: 5%;    
-}
-
-.cabecalho .titulo-art {
-    font-family: 'Kalam', 'Arial';
-    font-size: 6vw;
-    color: rgba(12, 12, 12);
-    margin: 0%;
-    padding-top: 2%;
-}
-*/
 .corpo .artigo {
     font-family: 'Mukta', 'Arial';
     text-align: justify;
@@ -409,7 +381,6 @@ input, textarea {
 }
 
 /* Responsividade */
-
 @media screen and (min-width: 1280px) {
     .logo {margin-left: 100px;}
     .menu {right: 100px;}
@@ -439,7 +410,6 @@ input, textarea {
         padding: 10px 40px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-     /*   transition: top 5s ease-in-out; */
         text-align: center;
         gap: 15%;
         animation: 1s 0s menuAnime;
@@ -455,10 +425,6 @@ input, textarea {
         }        
     }
 
-/*    .lista-menu li {
-        padding: 5px 0;  
-    }
-*/
     .lista-menu.active {
         display: flex;
     }
@@ -517,8 +483,6 @@ input, textarea {
 } 
 
 @media screen and (max-width: 540px) {   
-    /* reduzir tamanho da fonte ods h2
-    reduzir margens externas do header */
     .logo {
         margin-left: 20px;
     }
