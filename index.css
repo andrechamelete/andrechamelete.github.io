@@ -333,20 +333,11 @@ main h1 {
 }
 
 .contato h2 {
-    margin-right: 20%;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    margin-left: 20%;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
+    margin: 0% 20%;
+    border-radius: 100px;
     text-align: center;
     background: linear-gradient(#caeaf098, #2c717e98);
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-position-x: 14%;
-    margin-top: 0%;
-    margin-bottom: 0%;
     background-blend-mode:lighten;
     font-family: 'Arial', 'sans-serif';
     font-size: 200%;
@@ -470,9 +461,10 @@ input, textarea {
         font-size: 130%;
     }
 
-    .corpo .right, .left, .contato {
+    .corpo .right, .left {
         font-size: 150%;
     }
+
     .art h2 {
         font-size: 120%;
         font-weight: 800;
@@ -484,6 +476,10 @@ input, textarea {
         text-overflow: ellipsis;
         display: -webkit-box; line-clamp: 3; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
     }
+
+    .contato h2 {
+        font-size: 150%;
+    }
 }
 
 @media screen and (max-width: 625px ){  
@@ -492,7 +488,7 @@ input, textarea {
         font-size: 130%;
     }
 
-    .corpo .right, .left, .contato {
+    .corpo .right, .left {
         font-size: 120%;
     }
 
@@ -504,6 +500,10 @@ input, textarea {
     .art h2 {
         font-size: 100%;
         font-weight: 800;
+    }
+
+    .contato h2 {
+        font-size: 120%;
     }
 } 
 
