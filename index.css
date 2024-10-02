@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
 }
 
+/* header da página */
 header {
     position: absolute;
     background-color: #404040;  
@@ -150,10 +151,17 @@ header {
     width: 75px;
 }
 
-
-/* header da página */
+/* Main */
 main {
     background-color: #ebebeb;
+}
+
+.slogan {
+    padding: 0% 0% 0%;
+}
+
+.slogan div {
+    padding: 5%;
 }
 
 #slogan {
@@ -164,20 +172,16 @@ main {
     font-size: 180%
 }
 
-.corpo div .subslogan {
+#subslogan {
     padding: 3% 5% 0%;
     margin: 0%;
-
-}
-
-.corpo div .subslogan p {
     font-family: 'Rubik Mono One', 'sans-serif';
     font-size: 150%;
     text-align: center;
-    padding: 0;
 }
 
 /* Títulos das divisões e estilização geral do corpo */
+
 
 main h1 {
     text-align: left;
@@ -433,7 +437,7 @@ input, textarea {
         font-size: 150%;
     }
 
-    .corpo div .subslogan p {
+    #subslogan {
         font-size: 120%;
     }
 
@@ -463,10 +467,6 @@ input, textarea {
         font-size: 130%;
     }
 
-    .corpo div .subslogan p {
-        font-size: 100%;
-    }
-
     .corpo .right, .left, .contato {
         font-size: 120%;
     }
@@ -494,6 +494,11 @@ input, textarea {
     .lista-menu {
         right: -20px;
     }
+
+    #subslogan {
+        font-size: 100%;
+    }
+
 }
 
 @media screen  and (max-width: 450px) {
@@ -538,7 +543,7 @@ input, textarea {
         height: 70px;
     }
 
-    .corpo div .subslogan p {
+    #subslogan {
         font-size: 75%;
     }
 
