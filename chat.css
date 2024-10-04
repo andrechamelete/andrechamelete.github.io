@@ -63,3 +63,82 @@ header div nav {
 body {
     margin-top: 150px; /* Compensa a altura do header fixo */
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* Estilos para os títulos */
+.titulos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.titulos h2 {
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* Estilos para as explicações */
+.explicacoes {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.explicacao {
+    display: none; /* Escondido por padrão */
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilo para a explicação ativa */
+.explicacao.active {
+    display: block;
+}
+
+/* Responsividade: Quando a tela for menor que 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .titulos h2 {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Vamos remover o display: none da .explicacoes */
+    .explicacoes {
+        display: none;
+    }
+
+    /* As explicações agora aparecem abaixo dos títulos clicados */
+    .titulos h2 + .explicacao {
+        margin: 10px 0;
+        display: none; /* Continua escondido até o clique */
+    }
+
+    .explicacao.active {
+        display: block; /* Mostra apenas a explicação ativa */
+    }
+}
+

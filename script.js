@@ -31,3 +31,28 @@ document.addEventListener('click', function(event) {
         }
     }
 });
+
+const missao = document.querySelector('.missao');
+const publico = document.querySelector('.publico');
+const resultado = document.querySelector('.resultado');
+const idMissao = document.querySelector('.titulo-oQue');
+const idpublico = document.querySelector('.titulo-publico');
+const idResultado = document.querySelector('.titulo-resultado');
+
+idMissao.addEventListener('click',function() {
+    missao.classList.toggle('active');
+    publico.classList.remove('active');
+    resultado.classList.remove('active');
+});
+
+idpublico.addEventListener('click',function() {
+    publico.classList.toggle('active');
+    missao.classList.remove('active');
+    resultado.classList.remove('active');
+});
+
+idResultado.addEventListener('click',function() {
+    resultado.classList.toggle('active');
+    missao.classList.remove('active');
+    publico.classList.remove('active');
+});

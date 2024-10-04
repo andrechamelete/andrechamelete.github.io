@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabeçalho com Logo e Menu</title>
-    <link rel="stylesheet" href="chat.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cabeçalho com Logo e Menu</title>
+        <link rel="stylesheet" href="chat.css">
+    </head>
+    <body>
 
-<header>
-    <div>
-        <a href="https://wwww.chamelete.com">
-            <img src="logo-sem.png">
-            <h1>Chamelete</h1>
-        </a>
-        <nav>
-            <ul class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="artigo.html">Artigos</a></li>
-                <li><a href="https://github.com/andrechamelete">Projetos</a></li>
-                <li><a href="/sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        <header>
+            <div>
+                <a href="https://wwww.chamelete.com">
+                    <img src="logo-sem.png">
+                    <h1>Chamelete</h1>
+                </a>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="artigo.html">Artigos</a></li>
+                        <li><a href="https://github.com/andrechamelete">Projetos</a></li>
+                        <li><a href="/sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
+        <div class="container">
+            <!-- Lado esquerdo: Títulos -->
+            <div class="titulos">
+                <h2 data-explicacao="explicacao1">Título 1</h2>
+                <h2 data-explicacao="explicacao2">Título 2</h2>
+                <h2 data-explicacao="explicacao3">Título 3</h2>
+                <h2 data-explicacao="explicacao4">Título 4</h2>
+            </div>
+        
+            <!-- Lado direito: Explicações -->
+            <div class="explicacoes">
+                <div id="explicacao1" class="explicacao">Esta é a explicação do Título 1.</div>
+                <div id="explicacao2" class="explicacao">Esta é a explicação do Título 2.</div>
+                <div id="explicacao3" class="explicacao">Esta é a explicação do Título 3.</div>
+                <div id="explicacao4" class="explicacao">Esta é a explicação do Título 4.</div>
+            </div>
+        </div>
+        
+        
 
-</body>
+        <script src="chat.js"></script>
+    </body>
 </html>

@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+active
 * {
     box-sizing: border-box;
 }
@@ -93,7 +93,7 @@ header {
 
 .idioma img {
     height: 20px;
-    width: 51px;
+    width: 36px;
     min-height: 20px;
     cursor: pointer;
     padding: 0 5px 0 10px;
@@ -135,7 +135,7 @@ header {
 
 .idiom img {
     height: 20px;
-    width: 51px;
+    width: 36px;
     min-height: 20px;
     cursor: pointer;
     padding: 0 5px 0 10px;
@@ -180,9 +180,9 @@ main {
     text-align: center;
 }
 
-/* Títulos das divisões e estilização geral do corpo */
 
 
+/* Títulos de páginas */
 main h1 {
     text-align: left;
     font-family: 'Rubik Mono One', 'sans-serif';
@@ -207,12 +207,10 @@ main h1 {
     font-weight: 900;
 }
 
-.corpo .right, .left {
-    background: linear-gradient(#caeaf098, #2c717e98);
+/* Títulos das divisões e estilização geral do corpo */
+.corpo .right, .corpo .left {
+    background: linear-gradient(#caeaf098, #75b1ff98);
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-position-x: 14%;
     margin-top: 0%;
     margin-bottom: 0%;
     background-blend-mode:lighten;
@@ -228,17 +226,90 @@ main h1 {
         background-color: rgba(255, 255, 255, 0.7);
     }
     100% {
-        background-color: rgba(60, 92, 136, 0.3);
+        background-color: rgba(255, 255, 255, 0.3);
     }
 }
 
 .corpo .left {
-    margin-right: 30%;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    text-align: right;
-    padding-right: 10%;
+    align-self: center;
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    text-align: center;
+    margin-right: auto;
 }
+
+.apresentacao {
+    width: 60%;
+    margin: 0% auto;
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+}
+
+.apresentacao h2 {
+    background: radial-gradient(#ebebeb98, #40404098);
+    height: 100%;
+    background-blend-mode:lighten;
+    font-family: 'Arial', 'sans-serif';
+    font-size: 200%;
+    font-weight: 900;
+    padding: 1%;
+    animation: 3s infinite alternate colorTr;
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    cursor: pointer;
+}
+
+.apresentacao p {
+    font-family: 'Mukta', 'Arial';
+    text-align: justify;
+    padding: 0% 5%;
+    margin: 0% auto;
+    width: 90%;
+}
+
+.apresentacao li {
+    font-family: 'Mukta', 'Arial';
+    text-align: justify;
+    padding: 0% 5%;
+    margin: 0% auto;
+    width: 90%;
+}
+
+.missao {
+    height: 0;
+    overflow: hidden;
+    padding: 0% 5%;
+    transition: margin 0.6s ease-out, transform 0.6s ease-out, opacity 0.6s ease-in;
+    align-content: center;
+    margin: 0 auto;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.missao.active {
+    height: initial;
+    margin: 3% auto;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+/*
+.publico.active {
+    height: initial;
+    margin: 3% auto;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.resultado.active {
+    height: initial;
+    margin: 3% auto;
+    transform: translateX(0%);
+    opacity: 1;
+} */
 
 .corpo .right {
     margin-left: 30%;
@@ -246,11 +317,6 @@ main h1 {
     border-bottom-left-radius: 100px;
     text-align: left;
     padding-left: 10%;
-}
-
-.corpo {
-    background-color: #ebebeb;
-    padding: 0% 0% 0%;
 }
 
 .corpo div {
@@ -273,8 +339,39 @@ main h1 {
 }
 
 /* secção de artigos */
+.ultimos-artigos {
+    margin: 0 5%;
+
+    border-radius: 20px;
+}
+
+.ultimos-artigos .right {
+    height: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-blend-mode:lighten;
+    font-family: 'Arial', 'sans-serif';
+    font-size: 200%;
+    font-weight: 900;
+    padding: 3%;
+
+    text-align: left;
+    padding-left: 5%;
+}
+
+.ultimos-artigos div {
+    padding: 5%;
+}
+
+.ultimos-artigos p {
+    font-family: 'Mukta', 'Arial';
+    text-align: justify;
+    padding: 0% 5%;
+    margin: 0%;
+}
+
 .art {
-    padding: 5% 10%;
+    padding: 0 5%5% 5%;
 }
 
 .art div {
@@ -336,7 +433,7 @@ main h1 {
     margin: 0% 20%;
     border-radius: 100px;
     text-align: center;
-    background: linear-gradient(#caeaf098, #2c717e98);
+    background: radial-gradient(#ebebeb98, #40404098);
     height: 100%;
     background-blend-mode:lighten;
     font-family: 'Arial', 'sans-serif';
@@ -380,8 +477,7 @@ input, textarea {
 .contato form button {
     border-radius: 50px;
     border: 0;
-    width: 5%;
-    min-width: 30%;
+    width: 100px;
     color: #fff;
     height: 30px;
     background-color: rgb(39, 58, 160);
@@ -411,6 +507,10 @@ input, textarea {
 @media screen and (max-width: 992px) {
     .lista-menu {
         gap: 25px;
+    }
+
+    .apresentacao {
+        width: 80%;
     }
 }
 
@@ -461,6 +561,14 @@ input, textarea {
         font-size: 130%;
     }
 
+    .apresentacao h2 {
+        font-size: 160%;
+    }
+
+    .ultimos-artigos .right {
+        font-size: 150%;
+    }
+
     .corpo .right, .left {
         font-size: 150%;
     }
@@ -482,7 +590,7 @@ input, textarea {
     }
 }
 
-@media screen and (max-width: 625px ){  
+@media screen and (max-width: 625px){  
     /* reduzir tamanho fonte slogan e subslogan */
     #slogan {
         font-size: 130%;
@@ -495,6 +603,14 @@ input, textarea {
     .h1-arts {
         font-size: 120%;
         text-align: center;
+    }
+
+    .apresentacao h2 {
+        font-size: 150%
+    }
+
+    .ultimos-artigos .right {
+        font-size: 130%;
     }
 
     .art h2 {
@@ -524,6 +640,13 @@ input, textarea {
         font-size: 100%;
     }
 
+    .missao {
+        padding: 0 0;
+    }
+
+    .contato p {
+        padding: 0% 10% 3%;
+    }
 }
 
 @media screen  and (max-width: 450px) {
@@ -572,14 +695,30 @@ input, textarea {
         font-size: 75%;
     }
 
-    .corpo div form input, textarea {
+    .apresentacao {
+        width: 90%;
+    }
+
+    .apresentacao h2 {
+        font-size: 120%;
+    }
+
+    .ultimos-artigos .right {
+        padding: 3% 0;
+        font-size: 120%;
+    }
+
+    .art {
+        padding: 0 0 5%;
+    }
+
+    .contato div form input, textarea {
         width: 210px;
     }
 
-    .corpo div form button {
-        font-size: 80%;
+    .contato p {
+        padding: 0% 5% 3%;
     }
-
 }
 
 /*
