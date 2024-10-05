@@ -209,7 +209,7 @@ main h1 {
 
 /* Títulos das divisões e estilização geral do corpo */
 .corpo .right, .corpo .left {
-    background: linear-gradient(#caeaf098, #75b1ff98);
+    background: radial-gradient(#ebebeb98, #40404098);
     height: 100%;
     margin-top: 0%;
     margin-bottom: 0%;
@@ -371,7 +371,7 @@ main h1 {
 }
 
 .art {
-    padding: 0 5%5% 5%;
+    padding: 0 5% 5% 5%;
 }
 
 .art div {
@@ -403,7 +403,7 @@ main h1 {
     margin-bottom: 0%;
     font-family: 'Arial', 'sans-serif';
     font-size: 150%;
-    padding: 3% 3% 1%;
+    padding: 2% 3% 2%;
     text-align: start; 
 }
 
