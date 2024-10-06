@@ -569,7 +569,7 @@ input, textarea {
         font-size: 150%;
     }
 
-    .corpo .right, .left {
+    .corpo .right, .corpo .left {
         font-size: 150%;
     }
 
@@ -596,7 +596,7 @@ input, textarea {
         font-size: 130%;
     }
 
-    .corpo .right, .left {
+    .corpo .right, .corpo .left {
         font-size: 120%;
     }
 
@@ -616,6 +616,11 @@ input, textarea {
     .art h2 {
         font-size: 100%;
         font-weight: 800;
+    }
+
+    .corpo .artigo {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .contato h2 {
@@ -712,6 +717,11 @@ input, textarea {
 
     .art {
         padding: 0 0 5%;
+    }
+
+    .corpo .artigo {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .contato div form input, textarea {
