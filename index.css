@@ -183,7 +183,7 @@ main {
 
 
 /* Títulos de páginas */
-main h1 {
+main h1{
     text-align: left;
     font-family: 'Rubik Mono One', 'sans-serif';
     font-weight: normal;
@@ -202,9 +202,19 @@ main h1 {
 }
 
 .h1-arts {
-    font-size: 160%;
+    font-size: 200%;
     font-family: 'Arial', 'sans-serif';
     font-weight: 900;
+}
+
+.h2-arts {
+    font-size: 130%;
+    font-family: 'Arial', 'sans-serif';
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    margin: 0;
+    padding: 1% 20% 0;
 }
 
 /* Títulos das divisões e estilização geral do corpo */
@@ -501,7 +511,6 @@ input, textarea {
     .logo {margin-left: 100px;}
     .menu {right: 100px;}
     .lista-menu {gap: 80px}
-    .h1-arts {font-size: 180%;}
 }
 
 @media screen and (max-width: 992px) {
@@ -558,7 +567,11 @@ input, textarea {
     }
 
     .h1-arts {
-        font-size: 130%;
+        font-size: 180%;
+    }
+
+    .h2-arts {
+        font-size: 110%;
     }
 
     .apresentacao h2 {
@@ -601,8 +614,13 @@ input, textarea {
     }
 
     .h1-arts {
-        font-size: 120%;
+        font-size: 150%;
         text-align: center;
+    }
+
+    .h2-arts {
+        font-size: 100%;
+        text-align: center
     }
 
     .apresentacao h2 {
