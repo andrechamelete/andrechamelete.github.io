@@ -264,8 +264,8 @@ main h1{
     font-weight: 900;
     padding: 1%;
     animation: 3s infinite alternate colorTr;
-    border-top: 1px solid #404040;
-    border-bottom: 1px solid #404040;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
