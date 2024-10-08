@@ -225,7 +225,7 @@ main h1{
     margin-bottom: 0%;
     background-blend-mode:lighten;
     font-family: 'Arial', 'sans-serif';
-    font-size: 200%;
+    font-size: 170%;
     font-weight: 900;
     padding: 1%;
     animation: 3s infinite alternate colorTr;
