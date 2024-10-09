@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LD3X18NLJG"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-LD3X18NLJG');
+
+        </script>
+		<meta charset="UFT-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="Chamelete">
+        <meta property="og:description" content="O Kanban é um método de gestão do trabalho e evolução organizacional, inspirado no sistema japonês de gestão visual por cartões, que atua de forma não prescritiva, evolucionária e experimental, buscando o aprimoramento de empresas e serviços tornando-os mais sustentáveis, ajustados ao propósito dos clientes e demais stakeholders, mais capazes de responder a mudança e livres de sobrecarga de trabalho.">
+        <meta property="og:url" content="https://www.chamelete.com/limite-wip.html">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://www.chamelete.com/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1080">
+        <meta property="og:image:height" content="1080">
+
+		<meta name="keywords" content="Kanban, Scrum, Theory of Constrains, Flow management, Software development, Lean, Agile, Java">
+		<meta name="description" content="Gestão ágil sem estresse. Maior previsibilidade, menos custos, resultados excepcionais!">
+
+	    <title>Limite o Trabalho em Progresso - Chamelete.com</title>
+
+        <link rel="icon" href="https://www.chamelete.com/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+	    <link rel="stylesheet" href="index.css">
+	    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+	</head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <a href="https://www.chamelete.com" alt="Logo">
+                    <img src="logo-sem.webp" alt="Logomarca">
+                    <h1>Chamelete</h1>
+                </a>
+            </div>
+            <nav class="menu">
+                <div class="menu-toggle" id="menu-toggle">
+                    &#9776;
+                </div>              
+                <ul class="lista-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="artigo.html">Artigos</a>
+                    <li><a href="https://github.com/andrechamelete">Projetos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>               
+            </nav>
+        </header>
+
+        <div class="space"></div>
+
+        <nav class="idioma">
+            <a href="/en/wip-limit.html">
+                <img src="ingles.webp" alt="Switch to English / mudar para inglês">
+                <p class="tooltip">English</p>
+            </a>
+        </nav>
+
+        <main>
+            <h1 class="h1-arts">Limite o Trabalho em Progresso (WiP)</h1>
+            <h2 class="h2-arts">Segunda prática do método Kanban</h2>
+            <div class="corpo">
+                <div class="artigo">
+                    <p>
+                        Possuímos um limite de capacidade intrínseco para qualquer tarefa que pensarmos em realizar. Você consegue ler X páginas por hora, carregar Y quilos por vez, digitar N palavras por minuto.
+                    </p>
+                    <br>
+                    <h2 class="left">Porque limitar o WiP</h2>
+                    <br>
+                    <p>
+                        Imagine que você está de mudança e vai carregar seus pertences para o caminhão. Você percebe que consegue carregar, de forma segura, 2 caixas por vez. Se, para ir mais rápido, você tentar levar 4, pode ser que uma caia no meio do caminho, ou que você se desequilibre e quebre algumas coisas, e até se machucar.
+                    </p>
+                    <br>
+                    <p>
+                        Veja, quando não respeitamos a capacidade, problemas podem ocorrer.
+                    </p>
+                    <br>
+                    <p>
+                        No seu trabalho é a mesma coisa: se você precisar fazer o dobro no mesmo dia, precisará abrir mão da qualidade em nome da velocidade. Essa baixa qualidade vai refletir em erros e retrabalho, além de insatisfação do cliente.
+                    </p>
+                    <br>
+                    <p>
+                        Além disso, existe um estresse quando temos um trabalho começado mas não finalizado devido ao surgimento de outra demanda. Ficamos como que pensando “preciso terminar isso logo para poder voltar àquela o quanto antes”. Ou seja, tal tensão reduz seu foco.
+                    </p>
+                    <br>
+                    <p>
+                        Por fim, se existe mais trabalho do que a equipe suporta, haverá um estresse devido à sobrecarga, problemas de burnout e, caso necessário algum trabalho urgente, mais demandas ficarão em espera.
+                    </p>
+                    <br>
+                    <p>
+                        A segunda prática do Kanban, Limitar o WiP (trabalho em andamento), além de tudo mencionado acima, possui fundamento matemático:
+                    </p>
+                    <br>
+                    <p>
+                        Tempo de entrega = WiP / Vazão
+                    </p>
+                    <br>
+                    <p>   
+                        Assim, quanto maior a quantidade de trabalho em andamento, maior o tempo de entrega. Logo, se você quer entregar mais rápido, reduza seu WiP.
+                    </p>
+                    <br>
+                    <p>
+                        Inicialmente, podemos mencionar os seguintes benefícios ao utilizar a prática de Limite de WiP: proteção contra abuso da capacidade, redução do estresse, colaboradores mais satisfeitos, redução do tempo de entrega, maior qualidade, cliente mais satisfeitos.
+                    </p>
+                    <br>
+                    <p>
+                        Indo além, o Limite de WiP também ajuda a visualizar problemas de eficiência no fluxo.
+                    </p>
+                    <br>
+                    <p>
+                        Esta prática é o que diferencia um sistema puxado e um empurrado. Quando não há limite, tudo que chega é empurrado para o fluxo. Quando há, e este é alcançado, apenas uma demanda sendo finalizada é que outra poderá entrar (ser puxada). Focamos em terminar o que começamos.
+                    </p>
+                    <br>
+                    <p>
+                        Limitar o WiP traz à tona os obstáculos. Imagine que você vai atravessar um rio com um barquinho. Olhando por cima, você não consegue ver onde estão os barrancos e pedras, ocultos pela água, mas se você passar por um deles, causará avarias no barco e impedirá sua viagem. Ou seja, você pode não ver o problema, mas ele está te prejudicando.
+                    </p>
+                    <br>
+                    <p>
+                        Aqui, limitar o WiP seria como abaixar o nível da água para ver as barreiras. No rio isso não é possível, mas no seu fluxo é.
+                    </p>
+                    <br>
+                    <p>
+                        Suponha que você tem um serviço de 6 etapas (A a F), e você limitará o WiP do sistema em 30. Passado algum tempo você nota o seguinte comportamento:
+                    </p>
+                    <br>
+                    <img src="">
+                    <br>
+                    <p>
+                        Como temos um limite para o fluxo como um todo, o gargalo acaba acumulando grande parte das demandas. Neste momento, nada mais pode ser puxado, o sistema já tem 30 itens.
+                    </p>
+                    <br>
+                    <p>
+                        Agora, vamos limitar em 5 por etapa ao invés de 30 para o sistema. Depois de algum tempo você vê a seguinte configuração:
+                    </p>
+                    <br>
+                    <img src="">
+                    <br>
+                    <p>
+                        Aqui, o gargalo não está conseguindo alimentar a próxima etapa tão bem. E, provavelmente, as etapas anteriores a ele estejam com demandas já finalizadas, esperando D desbloquear o fluxo.
+                    </p>
+                    <br>
+                    <p>
+                        À primeira vista, essa prática pode parecer ruim, afinal, aparenta que o limite está obstruindo o trabalho. Mas não é o limite, e sim o gargalo. Lembre-se da Teoria da Restrição: a vazão do fluxo é condicionada à sua etapa menos eficiente, assim como a força da corrente é limitada à de seu elo mais fraco. Ou seja, se uma etapa tem vazão de 1 item por semana enquanto as demais conseguem fazer 5, sua vazão média será 1 / semana.
+                    </p>
+                    <br>
+                    <p>
+                        E, agora, com essa “dor” à tona, é possível engajar as pessoas a resolver o problema na causa (na eficiência da etapa D), ao invés de empurrar para debaixo do tapete puxando mais demandas e congestionando o sistema.
+                    </p>
+                </div>
+            </div>   
+        </main>  
+
+        <div class="contato">
+            <h2>Contato</h2>
+            <div>
+                <p>
+                    Se sua empresa deseja a capacidade de responder com rapidez à volatilidade do mercado e necessidade dos clientes, entre em contato conosco!
+                </p>          
+                <form action="https://formspree.io/f/xwpeplqv" method="POST">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name" size="40" required placeholder="Nome"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" size="40" required placeholder="Email"><br>
+                    <label for="message">Mensagem:</label><br>
+                    <textarea id="message" name="message" cols="42" placeholder="Mensagem" rows="5"></textarea><br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </body>
+<html>
