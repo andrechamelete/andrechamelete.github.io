@@ -181,7 +181,7 @@ header {
 .contt p {
     display: block;
     padding: 2px 10px;
-    margin: 2px;
+    margin: 5px;
     background: linear-gradient(#25d366, #1d753d);
     border-radius: 20px;
     width: 50px;
@@ -483,111 +483,6 @@ main h1{
 .impar.visible {
     transform: translateY(0%);
     opacity: 1;
-}
-
-/* Contato e formulário */
-.contato {
-    background-color: #ebebeb;
-    padding: 0% 0% 5% 0%;
-}
-
-.contato h2 {
-    margin: 0% 25%;
-    border-radius: 100px;
-    text-align: center;
-    background: radial-gradient(#ebebeb98, #40404098);
-    height: 100%;
-    background-blend-mode:lighten;
-    font-family: 'Arial', 'sans-serif';
-    font-size: 200%;
-    font-weight: 900;
-    padding: 1%;
-    animation: 3s infinite alternate colorTr;
-}
-
-.contato div {
-    padding: 5%;
-}
-
-.contato p {
-    font-family: 'Mukta', 'Arial';
-    text-align: justify;
-    padding: 0% 20% 3%;
-    margin: 0%;
-}
-
-.contato button {
-    justify-content: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.formas-contato {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: auto;
-    gap: 5%;
-
-}
-/*
-.formas-contato a {
-    background-color: #25d366;
-    padding: 0.4em 0.6em;
-    border-radius: 8px;
-}
-*/
-
-.formas-contato button {
-    background-color: #25d366;
-    width: 60px;
-    height: 60px;
-    border: none; 
-    justify-content: center;
-    border-radius: 100px; 
-    display: flex; 
-    align-items: center; 
-    cursor: pointer;
-    position: fixed;
-    left: 10em;
-    bottom: 4em;
-}
-
-
-.contato form {
-    font-family: 'Mukta', 'Arial';
-    font-style: oblique;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%
-}
-
-input, textarea {
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    border-top-color: rgb(180, 180, 180);
-    border-top-width: 2px;
-    border-left-color: rgb(180, 180, 180);
-    border-left-width: 2px;
-    border-bottom-color: white;
-    border-right-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.contato form button {
-    border-radius: 50px;
-    border: 0;
-    width: 100px;
-    color: #fff;
-    height: 30px;
-    background-color: rgb(39, 58, 160);
-    cursor: pointer;
-}
-
-.contato form button:hover {
-    background-color: rgba(39, 58, 160, 0.658);
 }
 
 /* estilização de artigos */
