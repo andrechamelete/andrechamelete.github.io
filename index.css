@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-active
+
 * {
     box-sizing: border-box;
 }
@@ -436,7 +436,7 @@ main h1{
 /* Contato e formulário */
 .contato {
     background-color: #ebebeb;
-    padding: 0% 0% 0%;
+    padding: 0% 0% 5% 0%;
 }
 
 .contato h2 {
@@ -462,6 +462,33 @@ main h1{
     text-align: justify;
     padding: 0% 20% 3%;
     margin: 0%;
+}
+
+.formas-contato {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    gap: 5%;
+
+}
+
+.formas-contato a {
+    background-color: #25d366;
+    padding: 0.4em 0.6em;
+    border-radius: 8px;
+}
+
+.formas-contato button {
+    background-color: #25d366;
+    padding: 1.2em 2em;
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    display: flex; 
+    align-items: center; 
+    cursor: pointer;
 }
 
 .contato form {
