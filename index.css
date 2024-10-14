@@ -538,7 +538,8 @@ footer div ul li:hover{
 }
 
 footer div ul li a img {
-    height: 30px; 
+    height: 30px;
+    width: 30px;
 }
 
 /* Responsividade */
