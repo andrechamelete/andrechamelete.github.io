@@ -227,8 +227,9 @@ main {
 #subslogan {
     padding: 3% 5% 0%;
     margin: 0%;
-    font-family: 'Rubik Mono One', 'sans-serif';
-    font-size: 150%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 160%;
+    font-weight:800;
     text-align: center;
 }
 
@@ -557,6 +558,10 @@ footer div ul li a img {
     .apresentacao {
         width: 80%;
     }
+
+    #subslogan {
+        font-size: 140%;
+    }
 }
 
 @media screen and (max-width: 768px) { 
@@ -600,6 +605,7 @@ footer div ul li a img {
 
     #subslogan {
         font-size: 120%;
+        padding: 3% 3% 0%;
     }
 
     .h1-arts {
@@ -643,6 +649,11 @@ footer div ul li a img {
     /* reduzir tamanho fonte slogan e subslogan */
     #slogan {
         font-size: 130%;
+    }
+
+    #subslogan {
+        font-size: 110%;
+        padding: 3% 0% 0%;
     }
 
     .corpo .right, .corpo .left {
@@ -698,7 +709,7 @@ footer div ul li a img {
     }
 
     #subslogan {
-        font-size: 100%;
+        font-size: 92%;
     }
 
     .missao {
@@ -753,7 +764,7 @@ footer div ul li a img {
     }
 
     #subslogan {
-        font-size: 75%;
+        font-size: 67%;
     }
 
     .apresentacao {
