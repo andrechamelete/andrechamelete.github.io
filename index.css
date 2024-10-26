@@ -288,7 +288,7 @@ main {
 }
 
 .apresentacao h2 {
-    background: linear-gradient(300deg, #40628ee8, #404040e8);
+    background: linear-gradient(300deg, #40628ee8, #4040408f);
     height: 100%;
     background-blend-mode: color;
     font-family: 'Arial', 'sans-serif';
@@ -943,8 +943,6 @@ footer div ul li a img {
     .parceiro {
         width: 100%;
     }
-
-
 }
 
 /*
