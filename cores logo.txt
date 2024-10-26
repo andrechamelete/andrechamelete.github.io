@@ -2,3 +2,37 @@ logo:
 azul: 40628E
 branco: EBEBEB
 fundo preto: 404040
+
+3  0
+6  0.5
+2  0.9
+5  1.2
+9  1.3
+1  1.4
+8  1.5
+4  1.7
+7  2
+
+
+.square2 {
+    top: 10px;
+    left:72px;
+    transform: rotate(15deg);
+    animation: square1M 5s 2s  infinite ease;
+}
+
+.square1 {
+    top: 05px;
+    left: 95px;
+    transform: rotate(-10deg);
+    animation: square1M 5s  infinite ease-in-out;
+}
+
+@keyframes square1M {
+    0% {
+        transform: rotate(0deg) translateX(0) translateY(0);
+    }    
+    10% {
+        transform: rotate(0deg) translateX(80vw) translateY(40vh);
+    }    
+}

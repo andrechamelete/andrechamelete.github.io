@@ -10,7 +10,7 @@ body {
 
 /* header da página */
 header {
-    position: absolute;
+    position: fixed; /* era absolute */
     background-color: #404040;  
     width: 100%;
     top: 0;
@@ -77,6 +77,76 @@ header {
 
 .space {
     height: 100px;
+    background-color: #404040;     
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    color: #ffffff;
+
+    z-index: 1;
+}
+
+.banner-container::before {
+    content: '';
+    position: absolute;
+    background-color: #404040e0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 0% 20%;
+}
+
+.banner-titulo {
+    position: relative;
+    text-align: center; 
+    font-family: 'Rubik Mono One', 'sans-serif';
+    padding: 0%;
+    margin: 0%;
+    font-size: 180%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    align-content: center;
+    height: 49%;
+}
+
+.barra1 {
+    background-color: #40628e;
+    height: 2%;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    box-shadow: 1px 1px 2px  #0000003b;
+}
+
+.banner-texto {
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 160%;
+    font-weight:800;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    align-content: center;
+    height: 49%;
+}
+
+.show {
+    opacity: 1;
 }
 
 /* botão lateral para mudança de idioma */
@@ -206,123 +276,43 @@ header {
 /* Main */
 main {
     background-color: #ebebeb;
+    padding: 3% 0;
 }
 
-.slogan {
-    padding: 0% 0% 0%;
-}
-
-.slogan div {
-    padding: 5%;
-}
-
-#slogan {
-    text-align: center; 
-    font-family: 'Rubik Mono One', 'sans-serif';
-    padding: 0% 0% 3%;
-    margin: 0%;
-    font-size: 180%
-}
-
-#subslogan {
-    padding: 3% 0% 0%;
-    margin: 0%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 160%;
-    font-weight:800;
-    text-align: center;
-}
-
-
-
-/* Títulos de páginas */
-main h1{
-    text-align: left;
-    font-family: 'Rubik Mono One', 'sans-serif';
-    font-weight: normal;
-    text-decoration: none;
-    margin: 0;
-    padding: 5% 20% 0;
-}
-
-.h1-artigos{
-    padding: 5% 10% 0;
-    font-size: 180%;
-}
-
-.h1-sobre {
-    font-size: 180%;
-}
-
-.h1-arts {
-    font-size: 200%;
-    font-family: 'Arial', 'sans-serif';
-    font-weight: 900;
-}
-
-.h2-arts {
-    font-size: 130%;
-    font-family: 'Arial', 'sans-serif';
-    font-weight: 600;
-    text-align: left;
-    text-decoration: none;
-    margin: 0;
-    padding: 1% 20% 0;
-}
-
-/* Títulos das divisões e estilização geral do corpo */
-.corpo .right, .corpo .left {
-    background: radial-gradient(#ebebeb98, #40404098);
-    height: 100%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    background-blend-mode:lighten;
-    font-family: 'Arial', 'sans-serif';
-    font-size: 170%;
-    font-weight: 900;
-    padding: 1%;
-    animation: 3s infinite alternate colorTr;
-}
-
-@keyframes colorTr {
-    0% {
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-    100% {
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-}
-
-.corpo .left {
-    align-self: center;
-    border-top: 1px solid #404040;
-    border-bottom: 1px solid #404040;
-    text-align: center;
-    margin-right: auto;
-}
-
+/* Seção apresentação - missão, quem atendemos, resultados */
 .apresentacao {
     width: 60%;
-    margin: 0% auto;
+    margin: 2% auto;
     border-top: 1px solid #404040;
     border-bottom: 1px solid #404040;
 }
 
 .apresentacao h2 {
-    background: radial-gradient(#ebebeb98, #40404098);
+    background: linear-gradient(300deg, #40628ee8, #404040e8);
     height: 100%;
-    background-blend-mode:lighten;
+    background-blend-mode: color;
     font-family: 'Arial', 'sans-serif';
     font-size: 200%;
     font-weight: 900;
     padding: 1%;
-    animation: 3s infinite alternate colorTr;
+    animation: 5s infinite alternate colorTr;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
     cursor: pointer;
+    border-radius: 15px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes colorTr {
+    0% {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+    }
 }
 
 .apresentacao p {
@@ -359,56 +349,13 @@ main h1{
     opacity: 1;
 }
 
-/*
-.publico.active {
-    height: initial;
-    margin: 3% auto;
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-.resultado.active {
-    height: initial;
-    margin: 3% auto;
-    transform: translateX(0%);
-    opacity: 1;
-} */
-
-.corpo .right {
-    margin-left: 30%;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    text-align: left;
-    padding-left: 10%;
-}
-
-.corpo div {
-    padding: 5%;
-}
-
-.corpo p {
-    font-family: 'Mukta', 'Arial';
-    text-align: justify;
-    padding: 0% 5%;
-    margin: 0%;
-}
-
-.corpo ul {
-    font-family: 'Mukta', 'Arial';
-    text-align: justify;
-    padding-left: 15%;
-    padding-right: 15%;
-    margin: 0%;
-}
-
-/* secção de artigos */
+/* Seção principais artigos */
 .ultimos-artigos {
-    margin: 0 5%;
-
+    padding: 2% 5%;
     border-radius: 20px;
 }
 
-.ultimos-artigos .right {
+.right {
     height: 100%;
     margin-top: 0%;
     margin-bottom: 0%;
@@ -416,8 +363,7 @@ main h1{
     font-family: 'Arial', 'sans-serif';
     font-size: 200%;
     font-weight: 900;
-    padding: 3%;
-
+    padding: 1%;
     text-align: left;
     padding-left: 5%;
 }
@@ -434,7 +380,7 @@ main h1{
 }
 
 .art {
-    padding: 0 5% 5% 5%;
+    padding: 0 5%;
 }
 
 .art div {
@@ -486,6 +432,138 @@ main h1{
     opacity: 1;
 }
 
+/* Seção empresas */
+.empresas {
+    position: relative;
+    padding: 2% 5%;
+}
+
+.empresas div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.empresas ul {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    background-color: #ebebeb;
+    padding: 0% 5%;
+    justify-content: center;
+    gap: 10%;
+    margin: auto; 
+}
+
+.parceiro {
+    position: relative;
+    padding: 5px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.bitflowin img {
+    width: 100%; /* 400px */
+    padding: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.medcao img {
+    width: 70%; /* 300px */
+    padding: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Títulos de páginas */
+main h1{
+    text-align: left;
+    font-family: 'Rubik Mono One', 'sans-serif';
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
+    padding: 0% 20% 0;
+}
+
+.h1-artigos{
+    padding: 0% 10% 0;
+    font-size: 180%;
+}
+
+.h1-sobre {
+    font-size: 180%;
+    padding: 3% 20% 0;
+}
+
+.h1-arts {
+    font-size: 200%;
+    font-family: 'Arial', 'sans-serif';
+    font-weight: 900;
+}
+
+.h2-arts {
+    font-size: 130%;
+    font-family: 'Arial', 'sans-serif';
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    margin: 0;
+    padding: 1% 20% 0;
+}
+
+/* Títulos das divisões e estilização geral do corpo */
+.corpo .right, .corpo .left {
+    background: radial-gradient(#ebebeb98, #40404098);
+    height: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-blend-mode:lighten;
+    font-family: 'Arial', 'sans-serif';
+    font-size: 170%;
+    font-weight: 900;
+    padding: 1%;
+    animation: 3s infinite alternate colorTr;
+}
+
+
+.corpo .left {
+    align-self: center;
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    text-align: center;
+    margin-right: auto;
+}
+
+.corpo .right {
+    margin-left: 30%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.corpo div {
+    padding: 5%;
+}
+
+.corpo p {
+    font-family: 'Mukta', 'Arial';
+    text-align: justify;
+    padding: 0% 5%;
+    margin: 0%;
+}
+
+.corpo ul {
+    font-family: 'Mukta', 'Arial';
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0%;
+}
+
 /* estilização de artigos */
 .corpo .artigo {
     font-family: 'Mukta', 'Arial';
@@ -494,11 +572,64 @@ main h1{
     padding-right: 20%
 }
 
+.corpo-metodologia {
+    margin: 5%
+}
+
+.etapa-metodologia {
+    border-radius: 10px;
+    margin: 3px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &:hover .texto-etapa {
+        display: block;
+    }
+}
+
+.titulo-metodologia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    
+    width: 80%;
+}
+
+.titulo-metodologia h3 {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    text-align: center;
+    align-self: auto;
+    color: white;
+    font-size: 120%;
+    padding: 1%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: linear-gradient(300deg, #40628ee8, #404040e8);
+}
+
+.titulo-metodologia h2 {
+    background-color: #ffffff69;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 1% 10%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.texto-etapa {
+    display: none;
+}
+
+
+
 footer {
-    height: 150px;
+    height: 100px;
     background-color: #404040;
     align-content: center;
-
 }
 
 .networks {
@@ -559,8 +690,8 @@ footer div ul li a img {
         width: 80%;
     }
 
-    #subslogan {
-        font-size: 140%;
+    .banner {
+        padding: 0% 10%;
     }
 }
 
@@ -599,12 +730,18 @@ footer div ul li a img {
         display: flex;
     }
 
-    #slogan {
-        font-size: 150%;
+    .banner-container {
+        height: 250px;
     }
 
-    #subslogan {
-        font-size: 110%;
+    .banner-titulo {
+        font-size: 170%;
+        height: 44%;
+    }
+
+    .banner-texto {
+        font-size: 150%;
+        height: 54%;
     }
 
     .h1-arts {
@@ -638,20 +775,15 @@ footer div ul li a img {
         text-overflow: ellipsis;
         display: -webkit-box; line-clamp: 3; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
     }
-
-    .contato h2 {
-        font-size: 150%;
-    }
 }
 
 @media screen and (max-width: 625px){  
-    /* reduzir tamanho fonte slogan e subslogan */
-    #slogan {
-        font-size: 130%;
+    .banner-titulo {
+        font-size: 140%;
     }
 
-    #subslogan {
-        font-size: 110%;
+    .banner-texto {
+        font-size: 120%
     }
 
     .corpo .right, .corpo .left {
@@ -672,7 +804,7 @@ footer div ul li a img {
         font-size: 150%
     }
 
-    .ultimos-artigos .right {
+    .right {
         font-size: 130%;
     }
 
@@ -684,10 +816,6 @@ footer div ul li a img {
     .corpo .artigo {
         padding-left: 10%;
         padding-right: 10%;
-    }
-
-    .contato h2 {
-        font-size: 120%;
     }
 } 
 
@@ -706,16 +834,24 @@ footer div ul li a img {
         width: 300px;
     }
 
-    #subslogan {
-        font-size: 92%;
+    .banner-container {
+        height: 200px;
+    }
+
+    .banner-titulo {
+        font-size: 120%;
+    }
+
+    .banner-texto {
+        font-size: 100%
     }
 
     .missao {
         padding: 0 0;
     }
 
-    .contato p {
-        padding: 0% 10% 3%;
+    .empresas ul {
+        gap: 0%;
     }
 }
 
@@ -761,8 +897,16 @@ footer div ul li a img {
         height: 70px;
     }
 
-    #subslogan {
-        font-size: 67%;
+    .banner {
+    padding: 0% 5%;
+    }
+
+    .banner-titulo {
+        font-size: 100%;
+    }
+
+    .banner-texto {
+        font-size: 80%
     }
 
     .apresentacao {
@@ -787,13 +931,20 @@ footer div ul li a img {
         padding-right: 5%;
     }
 
-    .contato div form input, textarea {
-        width: 210px;
+    .empresas .right {
+        font-size: 110%;
+        padding-left: 0%;
     }
 
-    .contato p {
-        padding: 0% 5% 3%;
+    .empresas ul {
+        padding: 0% 0%;
     }
+
+    .parceiro {
+        width: 100%;
+    }
+
+
 }
 
 /*

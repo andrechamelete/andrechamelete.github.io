@@ -1,4 +1,4 @@
-// script.js
+// script do menu
 document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -12,26 +12,25 @@ document.addEventListener("DOMContentLoaded", function() {
     left.forEach(el => observer.observe(el));
 });
 
-// Seleciona o ícone de menu e o próprio menu
 const menuToggle = document.querySelector('.menu-toggle');
 const listaMenu = document.querySelector('.lista-menu');
 
-// Adiciona o evento de clique
 menuToggle.addEventListener('click', function() {
-    // Alterna a classe 'active' para mostrar ou esconder o menu
     listaMenu.classList.toggle('active');
 });
 
 document.addEventListener('click', function(event) {
-    // Verifica se o clique foi fora da lista de menu e do botão de toggle
+    
     if (!listaMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-        // Se o menu estiver aberto, fecha-o removendo a classe 'active'
+    
         if (listaMenu.classList.contains('active')) {
             listaMenu.classList.remove('active');
         }
     }
 });
 
+
+// script dos botoes da apresentacao
 const missao = document.querySelector('.missao');
 const publico = document.querySelector('.publico');
 const resultado = document.querySelector('.resultado');
@@ -56,3 +55,44 @@ idResultado.addEventListener('click',function() {
     missao.classList.remove('active');
     publico.classList.remove('active');
 });
+
+
+/* Script para o banner*/
+let currentBanner = 1;
+function rotateBanner() {
+    const bannerTitulo1 = document.querySelector('.banner-titulo1');
+    const bannerTitulo2 = document.querySelector('.banner-titulo2');
+    const bannerTitulo3 = document.querySelector('.banner-titulo3');
+    const bannerTitulo4 = document.querySelector('.banner-titulo4');
+    const bannerTexto1 = document.querySelector('.banner-texto1');
+    const bannerTexto2 = document.querySelector('.banner-texto2');
+    const bannerTexto3 = document.querySelector('.banner-texto3');
+    const bannerTexto4 = document.querySelector('.banner-texto4');
+
+    if (currentBanner === 1) {
+        bannerTitulo1.classList.remove('show');
+        bannerTitulo2.classList.add('show');
+        bannerTexto1.classList.remove('show');
+        bannerTexto2.classList.add('show');
+        currentBanner = 2;
+    } else if  (currentBanner === 2) {
+        bannerTitulo2.classList.remove('show');
+        bannerTitulo3.classList.add('show');
+        bannerTexto2.classList.remove('show');
+        bannerTexto3.classList.add('show');
+        currentBanner = 3;        
+    } else if (currentBanner === 3) {
+        bannerTitulo3.classList.remove('show');
+        bannerTitulo4.classList.add('show');
+        bannerTexto3.classList.remove('show');
+        bannerTexto4.classList.add('show');
+        currentBanner = 4;
+    } else {
+        bannerTitulo4.classList.remove('show');
+        bannerTitulo1.classList.add('show');
+        bannerTexto4.classList.remove('show');
+        bannerTexto1.classList.add('show');
+        currentBanner = 1;
+    }
+}
+setInterval(rotateBanner, 6000);
