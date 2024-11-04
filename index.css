@@ -86,14 +86,13 @@ header {
     height: 300px;
     overflow: hidden;
     color: #ffffff;
-
     z-index: 1;
 }
 
 .banner-container::before {
     content: '';
     position: absolute;
-    background-color: #404040e0;
+    background-color: #40628ee0;
     z-index: 1;
     top: 0;
     left: 0;
@@ -101,53 +100,95 @@ header {
     height: 100%;
 }
 
+.sqr {
+
+    position: absolute;
+    z-index: 3;
+    box-shadow: 5px 5px 5px  #0000003b;
+    background-color: #40404027;
+}
+
+.sqr1 {
+    width: 15vw;
+    aspect-ratio: 1 / 1;
+    top: -3vw;
+    left: -3vw;
+    transform: rotate(25deg);
+}
+
+.sqr2 {
+    width: 15vw;
+    aspect-ratio: 1 / 1; 
+    bottom: -3vw;
+    right: -3vw;
+    transform: rotate(125deg);
+}
+
+.sqr3 {
+    width: 12%;
+    aspect-ratio: 1 / 1;
+    bottom:-5vw;
+    left: 20%;
+    transform: rotate(-115deg);
+}
+
+.sqr4 {
+    width: 12%;
+    aspect-ratio: 1 / 1;
+    top: -4vw;
+    right: 20%;
+    transform: rotate(35deg);
+}
+
 .banner {
     position: absolute;
     width: 100%;
     height: 100%;
     align-content: center;
-    z-index: 2;
+    z-index: 5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     padding: 0% 20%;
 }
 
 .banner-titulo {
     position: relative;
-    text-align: center; 
     font-family: 'Rubik Mono One', 'sans-serif';
     padding: 0%;
     margin: 0%;
-    font-size: 180%;
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-    align-content: center;
-    height: 49%;
-}
-
-.barra1 {
-    background-color: #40628e;
-    height: 2%;
-    width: 60%;
-    margin: auto;
-    position: relative;
-    box-shadow: 1px 1px 2px  #0000003b;
-}
-
-.banner-texto {
-    margin: 0%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 160%;
-    font-weight:800;
-    text-align: center;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 2s ease-in-out;
     align-content: center;
     height: 49%;
 }
 
+.banner-titulo1, .banner-titulo3 {
+    text-align: left;
+}
+
+.banner-titulo2, .banner-titulo4 {
+    text-align: right;
+}
+
+.state1 {
+    transform: translateX(0);
+    transition: transform 1s  ease-out, opacity 1s  ease-in;
+}
+
+.state2 {
+    transform: translateX(-100vw);
+    transition: transform 1s ease-out, opacity 1s ease-in;
+    opacity: 0;
+}
+
+.state3 {
+    transform: translateX(100vw);
+    opacity: 0;
+}
+/*
 .show {
     opacity: 1;
-}
+} */
 
 /* botão lateral para mudança de idioma */
 .idioma {
@@ -304,14 +345,15 @@ main {
     cursor: pointer;
     border-radius: 15px;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+    box-shadow: inset -3px -3px 5px #40628e;
 }
 
 @keyframes colorTr {
     0% {
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.7);
     }
     100% {
-        background-color: rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0.4);
     }
 }
 
@@ -572,60 +614,147 @@ main h1{
     padding-right: 20%
 }
 
-.corpo-metodologia {
-    margin: 5%
+/* página serviços */
+
+.servico {
+    padding: 2% 5%;
 }
 
-.etapa-metodologia {
-    border-radius: 10px;
-    margin: 3px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    &:hover .texto-etapa {
-        display: block;
+.h2-servico {
+    text-align: left;
+    margin: 0 5%;
+    padding: 0% 0%;
+    font-size: 160%;
+    font-family: 'Rubik Mono One', 'sans-serif';
+    font-weight: lighter;
+}
+
+.corpo-servico {
+    margin: 3% 5%;
+    & > p {
+        font-family: 'Mukta', 'Arial';
+        padding: 0%;
+        text-align: left; 
+        width: 60%;
+
     }
 }
 
-.titulo-metodologia {
+.etapa-servico {
+    border-radius: 10px;
+    margin: 1% 0;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    box-shadow: inset -3px -3px 5px #40628e;
+    transition: width 0.5s ease;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #ffffff69;
+}
+
+.titulo-etapa {
     display: flex;
     flex-direction: row;
     align-items: center;
-    cursor: pointer;
-    
-    width: 80%;
+    cursor: pointer;    
+    text-align: left;
 }
 
-.titulo-metodologia h3 {
+.titulo-etapa span {
     width: 40px;
     height: 40px;
     margin: 0;
-    text-align: center;
-    align-self: auto;
     color: white;
     font-size: 120%;
     padding: 1%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
     background: linear-gradient(300deg, #40628ee8, #404040e8);
 }
 
-.titulo-metodologia h2 {
+.titulo-etapa > h2 {
     background-color: #ffffff69;
     width: 100%;
     height: 40px;
     margin: 0;
-    padding: 1% 10%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    padding: 0 10%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-shadow: 1px 1px 2px #40628e;
+    align-content: center;
+    text-align: left;
 }
 
-.texto-etapa {
-    display: none;
+.texto-etapa {    
+    align-content: center;
+    display: block;
+    text-align: justify;
+    font-family: 'Mukta', 'Arial';
+    background-color: rgba(255, 255, 255, 0.7);
+
+    background-repeat: no-repeat;
+    background-position: center ; /* #404040a9  #40628e15 */
+    background-size: 100% 100%;
+    background-blend-mode:lighten;
+    border-radius: 10px;   
+    height: 0;
+    opacity: 0;
+    margin: 0;
+    overflow: hidden;
+    transform: translateX(100vw);
+    transition: transform 0.5s ease-in-out,
+                opacity 0.7s ease-in-out,
+                height 0.5s ease;
 }
 
+.img-etapa-visual {
+    background-image: url(kanban-quadro-992px.webp);
+}
 
+.img-etapa-transp {
+    background-image: url(transparencia-992px.webp);
+}
 
+.img-etapa-overburden {
+    background-image: url(cfd.webp);
+}
+
+.img-etapa-dados {
+    background-image: url(histograma.webp);
+}
+
+.img-etapa-coop {
+    background-image: url(coop-992px.webp);
+}
+
+.img-etapa-revisao {
+    background-image: url(revisao-992px.webp);
+}
+
+.img-etapa-cliente {
+    background-image: url(cliente-992px.webp);
+}
+
+.etapa-content {
+    position: relative;
+    padding: 0 10%;
+    height: inherit;
+    width: inherit;
+    align-content: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: rgb(0, 0, 0);
+    }
+
+.act {
+    height: 220px;
+    transform: translateX(0%);
+    opacity: 1;
+    margin: 3%;
+}
+
+/* Footer */
 footer {
     height: 100px;
     background-color: #404040;
@@ -679,6 +808,24 @@ footer div ul li a img {
     .logo {margin-left: 100px;}
     .menu {right: 100px;}
     .lista-menu {gap: 80px}
+    .img-etapa-visual {
+        background-image: url(kanban-quadro-1300px.webp);
+    }
+    .img-etapa-transp {
+        background-image: url(transparencia-1300px.webp);
+    }
+    .img-etapa-coop {
+        background-image: url(coop-1300px.webp);
+    }
+
+    .img-etapa-revisao {
+        background-image: url(revisao-1300px.webp);
+    }
+
+    .img-etapa-cliente {
+        background-image: url(cliente-1300px.webp);
+    }
+    
 }
 
 @media screen and (max-width: 992px) {
@@ -692,6 +839,17 @@ footer div ul li a img {
 
     .banner {
         padding: 0% 10%;
+    }
+
+    .corpo-servico > p{
+        width: 65%;
+    }
+    .etapa-servico {
+        width: 65%;
+    }
+
+    .act {
+        height: 220px;
     }
 }
 
@@ -775,6 +933,34 @@ footer div ul li a img {
         text-overflow: ellipsis;
         display: -webkit-box; line-clamp: 3; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
     }
+
+    .corpo-servico > p{
+        width: 80%;
+    }
+
+    .etapa-servico {
+        width: 80%;
+    }
+
+    .act {
+        height: 220px;
+    }
+
+    .img-etapa-visual {
+        background-image: url(kanban-quadro-768px.webp);
+    }
+
+    .img-etapa-coop {
+        background-image: url(coop-768px.webp);
+    }
+
+    .img-etapa-revisao {
+        background-image: url(revisao-768px.webp);
+    }
+
+    .img-etapa-cliente {
+        background-image: url(cliente-768px.webp);
+    }
 }
 
 @media screen and (max-width: 625px){  
@@ -817,6 +1003,22 @@ footer div ul li a img {
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    .corpo-servico > p {
+        width: 90%;
+    }
+
+    .etapa-servico {
+        width: 93%;
+    }
+
+    .etapa-content {
+        line-height: 150%;
+    }
+
+    .act {
+        height: 220px;
+    }
 } 
 
 @media screen and (max-width: 540px) {   
@@ -831,7 +1033,7 @@ footer div ul li a img {
     .lista-menu {
         right: -20px;
         gap: 30px;
-        width: 300px;
+        width: 400px;
     }
 
     .banner-container {
@@ -852,6 +1054,26 @@ footer div ul li a img {
 
     .empresas ul {
         gap: 0%;
+    }
+
+    .etapa-servico {
+        width: 95%;
+    }
+
+    .corpo-servico > p{
+        width: 95%;
+    }
+
+    .titulo-etapa > h2 {
+        font-size: 120%;
+    }
+
+    .texto-etapa {
+        background: none;
+    }
+
+    .act {
+        height: 250px;
     }
 }
 
@@ -942,6 +1164,19 @@ footer div ul li a img {
 
     .parceiro {
         width: 100%;
+    }
+
+    .corpo-servico > p {
+        width: 100%;
+    }
+
+    .titulo-etapa > h2 {
+        font-size: 95%;
+        padding: 0 3%;
+    }
+
+    .act {
+        height: 320px;
     }
 }
 
