@@ -537,7 +537,7 @@ main h1{
 
 .h1-sobre {
     font-size: 180%;
-    padding: 3% 20% 0;
+    padding: 0;
 }
 
 .h1-arts {
@@ -557,17 +557,28 @@ main h1{
 }
 
 /* Títulos das divisões e estilização geral do corpo */
+
+.artigo {
+    padding: 2% 20%;
+}
+
+.artigo > p {
+    margin: 3% 5%;
+    font-family: 'Mukta', 'Arial';
+    text-align: justify;
+
+}
+
 .corpo .right, .corpo .left {
-    background: radial-gradient(#ebebeb98, #40404098);
+    background-color: #ebebeb;
     height: 100%;
     margin-top: 0%;
     margin-bottom: 0%;
-    background-blend-mode:lighten;
     font-family: 'Arial', 'sans-serif';
     font-size: 170%;
     font-weight: 900;
     padding: 1%;
-    animation: 3s infinite alternate colorTr;
+    width: fit-content;
 }
 
 
@@ -576,7 +587,7 @@ main h1{
     border-top: 1px solid #404040;
     border-bottom: 1px solid #404040;
     text-align: center;
-    margin-right: auto;
+    margin: auto;
 }
 
 .corpo .right {
@@ -587,31 +598,12 @@ main h1{
     padding-left: 10%;
 }
 
-.corpo div {
-    padding: 5%;
-}
-
-.corpo p {
-    font-family: 'Mukta', 'Arial';
-    text-align: justify;
-    padding: 0% 5%;
-    margin: 0%;
-}
-
 .corpo ul {
     font-family: 'Mukta', 'Arial';
     text-align: justify;
     padding-left: 15%;
     padding-right: 15%;
     margin: 0%;
-}
-
-/* estilização de artigos */
-.corpo .artigo {
-    font-family: 'Mukta', 'Arial';
-    text-align: justify;
-    padding-left: 20%;
-    padding-right: 20%
 }
 
 /* página serviços */
@@ -841,6 +833,10 @@ footer div ul li a img {
         padding: 0% 10%;
     }
 
+    .artigo {
+        padding: 2% 10%;
+    }
+
     .corpo-servico > p{
         width: 65%;
     }
@@ -999,11 +995,6 @@ footer div ul li a img {
         font-weight: 800;
     }
 
-    .corpo .artigo {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
     .corpo-servico > p {
         width: 90%;
     }
@@ -1148,11 +1139,9 @@ footer div ul li a img {
         padding: 0 0 5%;
     }
 
-    .corpo .artigo {
-        padding-left: 5%;
-        padding-right: 5%;
+    .artigo {
+        padding: 2% 5%;
     }
-
     .empresas .right {
         font-size: 110%;
         padding-left: 0%;
