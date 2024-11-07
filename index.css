@@ -495,7 +495,8 @@ main {
     padding: 0% 5%;
     justify-content: center;
     gap: 10%;
-    margin: auto; 
+    margin: auto;
+    width: 80%;
 }
 
 .parceiro {
@@ -580,7 +581,6 @@ main h1{
     padding: 1%;
     width: fit-content;
 }
-
 
 .corpo .left {
     align-self: center;
@@ -831,6 +831,10 @@ footer div ul li a img {
 
     .banner {
         padding: 0% 10%;
+    }
+
+    .empresas ul {
+        width: 100%;
     }
 
     .artigo {
