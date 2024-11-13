@@ -673,7 +673,8 @@ main h1{
     padding: 0 0 0 10%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    text-shadow: 1px 1px 2px #40628e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    
     align-content: center;
     text-align: left;
 }
