@@ -1,4 +1,4 @@
-# 🚀 André Chamelete – Full Stack Developer with a Systems Thinking Mindset
+# André Chamelete – Full Stack Developer with a Systems Thinking Mindset
 
 ## 🇺🇸 English
 
